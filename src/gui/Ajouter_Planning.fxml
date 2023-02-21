@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Ajouter_PlanningController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="30.0" prefHeight="18.0" prefWidth="600.0" text="Ajouter un Planning" textAlignment="CENTER" textFill="#bc9f1e">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="145.0" text="Nom Evenement :" textFill="#bc9f1e" />
+      <Label layoutX="46.0" layoutY="191.0" prefHeight="18.0" prefWidth="89.0" text="Restaurant :" textFill="#bc9f1e" />
+      <Label layoutX="46.0" layoutY="254.0" prefHeight="18.0" prefWidth="90.0" text="Hotel :" textFill="#bc9f1e" />
+      <Label layoutX="46.0" layoutY="95.0" prefHeight="18.0" prefWidth="89.0" text="Nom Circuit :" textFill="#bc9f1e" />
+      <Label layoutX="46.0" layoutY="312.0" prefHeight="18.0" prefWidth="90.0" text="Emplacement :" textFill="#bc9f1e" />
+      <TextField layoutX="186.0" layoutY="91.0" promptText="Ecrire nom Circuit" style="TEXT: bc9f1e;" />
+      <TextField layoutX="186.0" layoutY="150.0" promptText="Ecrire nom Evenement" style="TEXT: bc9f1e;" />
+      <TextField layoutX="186.0" layoutY="196.0" promptText="Ecrire nom Restaurant" style="TEXT: bc9f1e;" />
+      <TextField layoutX="186.0" layoutY="250.0" promptText="Ecrire nom Hotel" style="TEXT: bc9f1e;" />
+      <TextField layoutX="186.0" layoutY="309.0" promptText="Ecrire votre Emplacement" style="TEXT: bc9f1e;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="393.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/425868.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="491.0" layoutY="335.0" mnemonicParsing="false" text="Ajouter" textFill="#bc9f1e" />
+   </children>
+</AnchorPane>

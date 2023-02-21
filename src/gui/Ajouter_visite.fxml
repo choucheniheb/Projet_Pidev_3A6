@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px; -fx-border-color: bc9f1e;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Ajouter_visiteController">
+   <children>
+      <Label layoutX="228.0" layoutY="41.0" text="Ajouter une Visite" textFill="#bc9f1e">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="101.0" text="Selectionner un Circuit :" textFill="#bc9f1e" />
+      <Label layoutX="102.0" layoutY="180.0" text="Selectionner un Evenement :" textFill="#bc9f1e" />
+      <ImageView fitHeight="121.0" fitWidth="136.0" layoutX="455.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/image/6618280.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="482.0" layoutY="324.0" mnemonicParsing="false" text="Ajouter" textFill="#bc9f1e" />
+      <ComboBox layoutX="101.0" layoutY="128.0" prefWidth="150.0" promptText="Nos Circuit" style="-fx-border-color: bc9f1e;" />
+      <ComboBox layoutX="101.0" layoutY="214.0" prefWidth="150.0" promptText="Nos Evenement" style="-fx-border-color: bc9f1e;" />
+      <Button layoutX="301.0" layoutY="128.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" text="Ajouter un Circuit" textFill="#bc9f1e" />
+      <Button layoutX="301.0" layoutY="214.0" mnemonicParsing="false" text="Ajouter un Evenement" textFill="#bc9f1e" />
+      <Button layoutX="403.0" layoutY="324.0" mnemonicParsing="false" text="Retour" textFill="#bc9f1e" />
+   </children>
+</AnchorPane>
