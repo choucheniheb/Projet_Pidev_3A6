@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="691.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gui.AfficherSController">
+   <children>
+      <TableView fx:id="ecran" layoutX="-1.0" prefHeight="444.0" prefWidth="907.0">
+        <columns>
+          <TableColumn fx:id="id_status" prefWidth="89.0" text="id_status" />
+          <TableColumn fx:id="titre_status" minWidth="0.0" prefWidth="85.0" text="titre_status" />
+            <TableColumn fx:id="contenu_status" prefWidth="118.0" text="contenu_status" />
+            <TableColumn fx:id="date_status" minWidth="8.0" prefWidth="91.0" text="date_status" />
+            <TableColumn fx:id="nbr_like" minWidth="0.0" prefWidth="91.0" text="nbr_like" />
+            <TableColumn fx:id="media_status" prefWidth="109.0" text="media_status" />
+            <TableColumn fx:id="id_utilisateur" minWidth="0.0" prefWidth="107.0" text="id_utilisateur" />
+            <TableColumn fx:id="Delete" minWidth="0.0" prefWidth="107.0" text="Delete" />
+            <TableColumn fx:id="Modifier" minWidth="0.0" prefWidth="107.0" text="Modifier" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
