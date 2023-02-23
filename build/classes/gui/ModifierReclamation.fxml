@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ModifierReclamationController">
+   <children>
+      <TextField fx:id="type_reclamation" layoutX="128.0" layoutY="80.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextArea fx:id="Text_reclamation" layoutX="129.0" layoutY="115.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="14.0" layoutY="84.0" prefHeight="17.0" prefWidth="104.0" text="type_reclamation :" />
+      <Label layoutX="14.0" layoutY="115.0" prefHeight="17.0" prefWidth="104.0" text="Text_reclamation:" />
+      <Label layoutX="204.0" layoutY="23.0" prefHeight="38.0" prefWidth="192.0" text="Modifier Reclamation" />
+      <Button fx:id="modifierB" layoutX="421.0" layoutY="338.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="58.0" text="Valider" />
+   </children>
+</AnchorPane>

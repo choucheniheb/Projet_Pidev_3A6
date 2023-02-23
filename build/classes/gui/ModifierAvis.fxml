@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="gui.ModifierAvisController">
+   <children>
+      <TextField fx:id="rate_avis" layoutX="122.0" layoutY="103.0" />
+      <Label layoutX="37.0" layoutY="107.0" prefHeight="17.0" prefWidth="85.0" text="Rate_avis :" />
+      <Label layoutX="242.0" layoutY="22.0" prefHeight="17.0" prefWidth="95.0" text="Modifier Avis" />
+      <Button fx:id="modifierB" layoutX="404.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="valider" />
+      <TextArea fx:id="texte_avis" layoutX="122.0" layoutY="142.0" prefHeight="172.0" prefWidth="149.0" />
+      <Label layoutX="24.0" layoutY="142.0" prefHeight="17.0" prefWidth="85.0" text="Texte_avis :" />
+   </children>
+</AnchorPane>
