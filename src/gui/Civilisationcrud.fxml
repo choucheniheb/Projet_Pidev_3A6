@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="687.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CivilisationcrudController">
+   <children>
+      <ImageView fitHeight="816.0" fitWidth="1229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Capture.PNG" />
+         </image>
+      </ImageView>
+      <VBox layoutX="37.0" layoutY="144.0" prefHeight="428.0" prefWidth="392.0" spacing="30.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="130.0" text="Nom Civilisation" textFill="WHITE" />
+            <Label prefHeight="21.0" prefWidth="119.0" text="Nom Monument" textFill="WHITE" />
+            <Label prefHeight="21.0" prefWidth="165.0" text="Date Debut Civilisation" textFill="WHITE" />
+            <Label prefHeight="21.0" prefWidth="151.0" text="Date Fin Civilisation" textFill="WHITE" />
+            <Label text="Description Civilisation" textFill="WHITE" />
+            <TextArea fx:id="descriptionbtn" prefHeight="166.0" prefWidth="349.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="292.0" layoutY="142.0" prefHeight="238.0" prefWidth="274.0" spacing="20.0">
+         <children>
+            <TextField fx:id="nomcivilisationbtn" />
+            <TextField fx:id="nommonubtn" />
+            <DatePicker fx:id="datedebutbtn" prefHeight="31.0" prefWidth="276.0" />
+            <DatePicker fx:id="datefinbtn" prefHeight="31.0" prefWidth="274.0" />
+         </children>
+      </VBox>
+      <Button fx:id="ajoutercivibtn" layoutX="659.0" layoutY="458.0" mnemonicParsing="false" onAction="#ajouterCivilisation" prefHeight="58.0" prefWidth="119.0" text="Ajouter " />
+      <Button fx:id="retourCivibtn" layoutX="491.0" layoutY="458.0" mnemonicParsing="false" onAction="#swForm2" prefHeight="58.0" prefWidth="119.0" text="Retour" />
+      <Pane layoutY="75.0" prefHeight="13.0" prefWidth="1229.0" style="-fx-background-color: #D4AF37;" />
+      <Text fill="#e8e1e1" layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout Civilisation" wrappingWidth="392.00000385940075">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="32.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
