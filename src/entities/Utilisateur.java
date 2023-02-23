@@ -12,7 +12,7 @@ package entities;
 public class Utilisateur {
     private int id_utilisateur,id_role;
     private String nom_utilisateur,prenom_utilisateur,mail_utilisateur,numero_telephone,pseudo,mtp;
-    private String date_naissance;
+    private String date_naissance,nom_Role;
 
     public Utilisateur(int id_utilisateur, int id_role, String nom_utilisateur, String prenom_utilisateur, String mail_utilisateur, String numero_telephone, String pseudo, String mtp, String date_naissance) {
         this.id_utilisateur = id_utilisateur;
@@ -35,6 +35,21 @@ public class Utilisateur {
         this.pseudo = pseudo;
         this.mtp = mtp;
         this.date_naissance = date_naissance;
+    }
+
+    public Utilisateur(int id_utilisateur, String nom_utilisateur, String prenom_utilisateur, String mail_utilisateur, String numero_telephone, String pseudo, String date_naissance) {
+        this.id_utilisateur = id_utilisateur;
+        this.nom_utilisateur = nom_utilisateur;
+        this.prenom_utilisateur = prenom_utilisateur;
+        this.mail_utilisateur = mail_utilisateur;
+        this.numero_telephone = numero_telephone;
+        this.pseudo = pseudo;
+        this.date_naissance = date_naissance;
+    }
+
+    public Utilisateur(int id_utilisateur, String mtp) {
+        this.id_utilisateur = id_utilisateur;
+        this.mtp = mtp;
     }
 
     
@@ -112,6 +127,14 @@ public class Utilisateur {
 
     public void setDate_naissance(String date_naissance) {
         this.date_naissance = date_naissance;
+    }
+
+    public String getNom_Role() {
+        return nom_Role;
+    }
+
+    public void setNom_Role(String nom_Role) {
+        this.nom_Role = nom_Role;
     }
    
 

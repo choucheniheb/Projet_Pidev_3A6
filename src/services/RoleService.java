@@ -68,7 +68,7 @@ public class RoleService implements IService<Role>{
     }
 
     @Override
-    public List<Role> recuperer(Role t) throws SQLException {
+    public List<Role> recuperer() throws SQLException {
         List<Role> roles = new ArrayList<>();
         String s = "select * from Roles";
         Statement st = cnx.createStatement();
@@ -94,6 +94,18 @@ public class RoleService implements IService<Role>{
             roles.add(r);
         }
         return roles;
+    }
+    public Role chercherRole(String nom_role) throws SQLException {
+        String s = "select * from Roles where nom_role = '"+nom_role+"'";
+        Statement st = cnx.createStatement();
+        ResultSet rs =  st.executeQuery(s);
+        Role r = new Role();
+        if(rs.next()){
+            r.setNomRole(rs.getString("nom_role"));
+            r.setIdRole(rs.getInt("id_role"));
+            r.setDiscriptionRole(rs.getString("description_Role"));
+        }
+        return r;
     }
     
 }

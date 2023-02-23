@@ -52,7 +52,7 @@ public class PermissionService implements IService<Permission>{
    }
 
     @Override
-    public List<Permission> recuperer(Permission t) throws SQLException {
+    public List<Permission> recuperer() throws SQLException {
         List<Permission> permission = new ArrayList<>();
         String s = "select * from permissions";
         Statement st = cnx.createStatement();

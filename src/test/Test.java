@@ -27,12 +27,12 @@ public class Test {
     public static void main(String[] args) {
        
         try {
-            //Utilisateur u = new Utilisateur(2, "iheb", "chouchen", "chouchen.iheb@esprit.tn", "26836763", "ihebch", "iheb@1122", "2000-07-07");
-            //UtilisateurService ps = new UtilisateurService();
+            Utilisateur u = new Utilisateur(2, "iheb", "chouchen", "chouchen.iheb@esprit.tn", "26836763", "ihebch", "iheb@1122", "2000-07-07");
+            UtilisateurService ps = new UtilisateurService();
             //ps.ajouter(u);
             //ps.modifier(u);
             //ps.supprimer(u);
-            //System.out.println(ps.recuperer(u));
+            System.out.println(ps.recuperer());
             /*Role r= new Role(15,"mod", "moderator");
             RoleService ps=new RoleService();
             List<Permission> p = new ArrayList<>();
@@ -44,12 +44,12 @@ public class Test {
             ps.ajouter(r);
             ps.modifier(r);
             System.out.println(ps.recuperer(r));*/
-            Permission u = new Permission(13,"perm_ajouter", "permet de ajouter les utiliateur", 1);
-            PermissionService ps = new PermissionService();
+            //Permission u = new Permission(13,"perm_ajouter", "permet de ajouter les utiliateur", 1);
+            //PermissionService ps = new PermissionService();
             //ps.ajouter(u);
             //ps.modifier(u);
-            ps.supprimer(u);
-            System.out.println(ps.recuperer(u));
+            //ps.supprimer(u);
+            //System.out.println(ps.recuperer());
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }
