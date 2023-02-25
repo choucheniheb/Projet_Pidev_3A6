@@ -59,7 +59,7 @@ public class Gestion_EvenementController implements Initializable {
         Afficher_les_Evenements.setOnAction(Afficher_les_Evenements -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Afficher_Circuit.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Afficher_Evenement.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Afficher_les_Evenements.getSource()).getScene().getWindow();

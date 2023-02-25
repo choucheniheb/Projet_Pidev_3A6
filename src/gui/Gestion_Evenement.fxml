@@ -9,25 +9,45 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Gestion_EvenementController">
    <children>
-      <Button fx:id="Ajouter_un_Evenement" layoutX="84.0" layoutY="188.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="196.0" text="Ajouter un Evenement" textFill="#bc9f1e">
+      <Button fx:id="Ajouter_un_Evenement" layoutX="71.0" layoutY="188.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="209.0" text="Ajouter un Evenement" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="Afficher_les_Evenements" layoutX="321.0" layoutY="188.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="196.0" text="Afficher les Evenements" textFill="#bc9f1e">
+      <Button fx:id="Afficher_les_Evenements" layoutX="315.0" layoutY="188.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="216.0" text="Afficher les Evenements" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="Retour" layoutX="491.0" layoutY="326.0" mnemonicParsing="false" text="Retour" textFill="#bc9f1e" />
+      <Button fx:id="Retour" layoutX="471.0" layoutY="326.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" text="Retour" textFill="#bc9f1e" />
       <Label layoutX="182.0" layoutY="70.0" text="Gestion des Evenements" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="22.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="192.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Downloads/324352899_1367577970682741_241313171972203892_n.png" />
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="172.0" fitWidth="178.0" layoutX="7.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="23.0" layoutX="75.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/4677490.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="318.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Eye-icon-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="11.0" layoutX="476.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
          </image>
       </ImageView>
    </children>

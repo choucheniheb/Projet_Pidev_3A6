@@ -3,15 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Ihebc/Documents/NetBeansProjects/ProjetPIDEV/src/services/IService.java</file>
-            <file>file:/C:/Users/Ihebc/Documents/NetBeansProjects/ProjetPIDEV/src/test/Test.java</file>
-            <file>file:/C:/Users/Ihebc/Documents/NetBeansProjects/ProjetPIDEV/src/services/RoleService.java</file>
-            <file>file:/C:/Users/Ihebc/Documents/NetBeansProjects/ProjetPIDEV/src/services/UtilisateurService.java</file>
-            <file>file:/C:/Users/Ihebc/Documents/NetBeansProjects/ProjetPIDEV/src/services/PermissionService.java</file>
-            <file>file:/C:/Users/Ihebc/Documents/NetBeansProjects/ProjetPIDEV/src/entities/Role.java</file>
-            <file>file:/C:/Users/Ihebc/Documents/NetBeansProjects/ProjetPIDEV/src/entities/Utilisateur.java</file>
-            <file>file:/C:/Users/Ihebc/Documents/NetBeansProjects/ProjetPIDEV/src/entities/Permission.java</file>
-            <file>file:/C:/Users/Ihebc/Documents/NetBeansProjects/ProjetPIDEV/src/utils/MyDB.java</file>
+            <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/Modifier_PlanningController.java</file>
+            <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/ModifierEvenementController.java</file>
+            <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/Afficher_PlanningController.java</file>
         </group>
     </open-files>
 </project-private>

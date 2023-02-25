@@ -8,28 +8,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Ajouter_PlanningController">
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="881.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Ajouter_PlanningController">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="30.0" prefHeight="18.0" prefWidth="600.0" text="Ajouter un Planning" textAlignment="CENTER" textFill="#bc9f1e">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="66.0" prefHeight="22.0" prefWidth="852.0" text="Ajouter un Planning" textAlignment="CENTER" textFill="#bc9f1e">
          <font>
-            <Font name="Bell MT Bold" size="18.0" />
+            <Font name="Bell MT Bold" size="33.0" />
          </font>
       </Label>
-      <Label layoutX="46.0" layoutY="145.0" text="Nom Evenement :" textFill="#bc9f1e" />
-      <Label layoutX="46.0" layoutY="191.0" prefHeight="18.0" prefWidth="89.0" text="Restaurant :" textFill="#bc9f1e" />
-      <Label layoutX="46.0" layoutY="254.0" prefHeight="18.0" prefWidth="90.0" text="Hotel :" textFill="#bc9f1e" />
-      <Label layoutX="46.0" layoutY="95.0" prefHeight="18.0" prefWidth="89.0" text="Nom Circuit :" textFill="#bc9f1e" />
-      <Label layoutX="46.0" layoutY="312.0" prefHeight="18.0" prefWidth="90.0" text="Emplacement :" textFill="#bc9f1e" />
-      <TextField layoutX="186.0" layoutY="91.0" promptText="Ecrire nom Circuit" style="TEXT: bc9f1e;" />
-      <TextField layoutX="186.0" layoutY="150.0" promptText="Ecrire nom Evenement" style="TEXT: bc9f1e;" />
-      <TextField layoutX="186.0" layoutY="196.0" promptText="Ecrire nom Restaurant" style="TEXT: bc9f1e;" />
-      <TextField layoutX="186.0" layoutY="250.0" promptText="Ecrire nom Hotel" style="TEXT: bc9f1e;" />
-      <TextField layoutX="186.0" layoutY="309.0" promptText="Ecrire votre Emplacement" style="TEXT: bc9f1e;" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="393.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+      <Label layoutX="82.0" layoutY="249.0" text="Id Evenement :" textFill="#bc9f1e" />
+      <Label layoutX="82.0" layoutY="295.0" prefHeight="18.0" prefWidth="89.0" text="Restaurant :" textFill="#bc9f1e" />
+      <Label layoutX="82.0" layoutY="358.0" prefHeight="18.0" prefWidth="90.0" text="Hotel :" textFill="#bc9f1e" />
+      <Label layoutX="82.0" layoutY="199.0" prefHeight="18.0" prefWidth="89.0" text="Id Circuit :" textFill="#bc9f1e" />
+      <Label layoutX="82.0" layoutY="416.0" prefHeight="18.0" prefWidth="90.0" text="Emplacement :" textFill="#bc9f1e" />
+      <TextField fx:id="idcir" layoutX="222.0" layoutY="195.0" promptText="Ecrire id Circuit" style="TEXT: bc9f1e;" />
+      <TextField fx:id="idev" layoutX="222.0" layoutY="254.0" promptText="Ecrire id Evenement" style="TEXT: bc9f1e;" />
+      <TextField fx:id="resto" layoutX="222.0" layoutY="300.0" promptText="Ecrire nom Restaurant" style="TEXT: bc9f1e;" />
+      <TextField fx:id="hotel" layoutX="222.0" layoutY="354.0" promptText="Ecrire nom Hotel" style="TEXT: bc9f1e;" />
+      <TextField fx:id="emplace" layoutX="222.0" layoutY="413.0" promptText="Ecrire votre Emplacement" style="TEXT: bc9f1e;" />
+      <ImageView fitHeight="252.0" fitWidth="279.0" layoutX="508.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Desktop/425868.png" />
+            <Image url="@image/425868.png" />
          </image>
       </ImageView>
-      <Button layoutX="491.0" layoutY="335.0" mnemonicParsing="false" text="Ajouter" textFill="#bc9f1e" />
+      <Button fx:id="Ajouter_Planning" layoutX="705.0" layoutY="487.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="127.0" text="Ajouter Planning" textFill="#bc9f1e" />
+      <ImageView fitHeight="162.0" fitWidth="187.0" layoutX="28.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="308.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Retour" layoutX="75.0" layoutY="491.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="94.0" text="Retour" textFill="#bc9f1e" />
    </children>
 </AnchorPane>

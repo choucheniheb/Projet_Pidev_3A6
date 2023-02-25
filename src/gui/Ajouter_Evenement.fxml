@@ -9,76 +9,95 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="gui.Ajouter_EvenementController">
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="882.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Ajouter_EvenementController">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="45.0" prefHeight="18.0" prefWidth="600.0" text="Ajouter Evenement" textFill="#bc9f1e">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="86.0" prefHeight="31.0" prefWidth="871.0" text="Ajouter Evenement" textAlignment="CENTER" textFill="#bc9f1e">
          <font>
-            <Font name="Bell MT Bold" size="26.0" />
+            <Font name="Bell MT Bold" size="33.0" />
          </font>
       </Label>
-      <Label layoutX="46.0" layoutY="127.0" text="Titre :" textFill="#bc9f1e">  
-         <font>
-            <Font name="Bell MT Bold" size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="45.0" layoutY="168.0" text="Type :" textFill="#bc9f1e">
+      <Label layoutX="61.0" layoutY="191.0" text="Titre :" textFill="#bc9f1e">  
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="45.0" layoutY="257.0" text="Date :" textFill="#bc9f1e">
+      <Label layoutX="60.0" layoutY="232.0" text="Type :" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="44.0" layoutY="213.0" text="Lieux :" textFill="#bc9f1e">
+      <Label layoutX="60.0" layoutY="321.0" text="Date :" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="340.0" layoutY="127.0" text="Prix :" textFill="#bc9f1e">
+      <Label layoutX="59.0" layoutY="277.0" text="Lieux :" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="340.0" layoutY="168.0" text="Invité :" textFill="#bc9f1e">
+      <Label layoutX="66.0" layoutY="362.0" text="Prix :" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="342.0" layoutY="248.0" text="Description :" textFill="#bc9f1e">
+      <Label layoutX="66.0" layoutY="403.0" text="Invité :" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="341.0" layoutY="213.0" text="Utilisateur :" textFill="#bc9f1e">
+      <Label layoutX="68.0" layoutY="483.0" text="Description :" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="126.0" layoutY="123.0" />
-      <TextField layoutX="126.0" layoutY="164.0" />
-      <TextField layoutX="126.0" layoutY="209.0" />
-      <TextField layoutX="418.0" layoutY="123.0" />
-      <TextField layoutX="418.0" layoutY="164.0" />
-      <TextField layoutX="418.0" layoutY="209.0" />
-      <TextField layoutX="418.0" layoutY="244.0" prefHeight="80.0" prefWidth="150.0" />
-      <DatePicker layoutX="126.0" layoutY="253.0" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="8.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../Downloads/324352899_1367577970682741_241313171972203892_n.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="450.0" layoutY="350.0" mnemonicParsing="false" text="Ajouter Evenement" textFill="#bc9f1e">
+      <Label layoutX="67.0" layoutY="448.0" text="Utilisateur :" textFill="#bc9f1e">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titre" layoutX="156.0" layoutY="185.0" prefHeight="26.0" prefWidth="175.0" promptText="Titre Evenement" />
+      <TextField fx:id="type" layoutX="156.0" layoutY="228.0" prefHeight="26.0" prefWidth="175.0" promptText="Type Evenement" />
+      <TextField fx:id="lieux" layoutX="156.0" layoutY="271.0" prefHeight="26.0" prefWidth="175.0" promptText="Lieux Evenement" />
+      <TextField fx:id="prix" layoutX="159.0" layoutY="356.0" prefHeight="26.0" prefWidth="175.0" promptText="Prix Evenement" />
+      <TextField fx:id="invite" layoutX="159.0" layoutY="397.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="utilisateur" layoutX="159.0" layoutY="442.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="description" layoutX="159.0" layoutY="477.0" prefHeight="80.0" prefWidth="312.0" promptText="Votre description" />
+      <DatePicker fx:id="date" layoutX="156.0" layoutY="315.0" promptText="Date Evenement" />
+      <Button fx:id="Ajouter_Evenement" layoutX="645.0" layoutY="481.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" text="Ajouter Evenement" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="341.0" layoutY="349.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="63.0" text="Retour" textFill="#bc9f1e">
+      <Button fx:id="Retour" layoutX="499.0" layoutY="481.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="95.0" text="Retour" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font>
       </Button>
+      <ImageView fitHeight="167.0" fitWidth="195.0" layoutX="52.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="651.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/téléchargement-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="506.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="221.0" fitWidth="232.0" layoutX="541.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/4088125.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="335.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

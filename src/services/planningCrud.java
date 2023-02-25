@@ -71,15 +71,20 @@ public class planningCrud implements InterfacePlanning {
     }
 
     @Override
-    public void supprimer(int id_planning) {
+    public Boolean supprimer(int id_planning) {
+                Boolean ok=false;
+
    try {
             String requete3 = " DELETE FROM planning WHERE id_planning = ? " ;
             PreparedStatement pst = cnx2.prepareStatement(requete3);
             pst.setInt(1,id_planning);
             pst.executeUpdate();
             System.out.println("planning supprime");
+            ok=true;
         } catch (SQLException ex) {
-            System.err.println(ex.getMessage());        }    
+            System.err.println(ex.getMessage());       
+        }  
+        return ok;
     }
 
     

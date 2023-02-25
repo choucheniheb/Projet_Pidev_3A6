@@ -9,7 +9,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Gestion_CircuitController">
    <children>
-      <Label layoutX="192.0" layoutY="87.0" text="Gestion des Circuits" textFill="#bc9f1e">
+      <Label layoutX="192.0" layoutY="61.0" text="Gestion des Circuits" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="24.0" />
          </font>
@@ -19,15 +19,35 @@
             <Font name="Bell MT Bold" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="Afficher_les_Circuits" layoutX="357.0" layoutY="182.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="198.0" text="Afficher les Circuits" textFill="#bc9f1e">
+      <Button fx:id="Afficher_les_Circuits" layoutX="348.0" layoutY="182.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="207.0" text="Afficher les Circuits" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="17.0" />
          </font>
       </Button>
-      <Button fx:id="retour" layoutX="481.0" layoutY="330.0" mnemonicParsing="false" text="Retour" textFill="#bc9f1e" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="retour" layoutX="481.0" layoutY="330.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="83.0" text="Retour" textFill="#bc9f1e" />
+      <ImageView fitHeight="178.0" fitWidth="187.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Downloads/324352899_1367577970682741_241313171972203892_n.png" />
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="16.0" layoutX="487.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="73.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/4677490.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="16.0" layoutX="356.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Eye-icon-removebg-preview.png" />
          </image>
       </ImageView>
    </children>

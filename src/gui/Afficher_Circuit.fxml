@@ -1,11 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Afficher_CircuitController">
-    
+<AnchorPane id="AnchorPane" prefHeight="572.0" prefWidth="943.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Afficher_CircuitController">
+   <children>
+      <TableView fx:id="circuittv" layoutY="94.0" prefHeight="478.0" prefWidth="970.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="71.99999696016312" text="id circuit " />
+          <TableColumn fx:id="pd" prefWidth="79.19998168945312" text="Point depat" />
+            <TableColumn fx:id="dd" prefWidth="84.800048828125" text="Date debut" />
+            <TableColumn fx:id="df" prefWidth="63.99995422363281" text="Date fin " />
+            <TableColumn fx:id="nbrp" prefWidth="77.60003662109375" text="Nbr place" />
+            <TableColumn fx:id="des" prefWidth="130.4000244140625" text="Description" />
+            <TableColumn fx:id="nbrj" prefWidth="67.199951171875" text="Nbr jour" />
+            <TableColumn fx:id="idu" prefWidth="98.4000244140625" text="Id utilisateur" />
+            <TableColumn fx:id="nomc" prefWidth="117.5999755859375" text="Nom Circuit" />
+            <TableColumn fx:id="delete" prefWidth="88.800048828125" text="action" />
+            <TableColumn fx:id="modifier" prefWidth="75.0" text="action2" />
+        </columns>
+      </TableView>
+      <Label fx:id="Retour" alignment="CENTER" layoutY="33.0" prefHeight="46.0" prefWidth="970.0" text="Nos Circuit" textFill="#bc9f1e">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="106.0" fitWidth="119.0" layoutX="14.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="168.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="627.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="11.0" fitWidth="13.0" layoutX="871.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Retours" layoutX="860.0" layoutY="37.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" text="Retour" textFill="#bc9f1e" />
+      <ImageView fitHeight="11.0" fitWidth="17.0" layoutX="866.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>

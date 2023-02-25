@@ -18,7 +18,7 @@ public interface InterfacePlanning {
     
     public void ajouter(planning  p) ;
     public void modifier( int id_circuit , int id_evenement , String resto , String hotel , String emplacement ,int id_planning ) ;
-    public void supprimer ( int id_planning) ;
+    public Boolean supprimer ( int id_planning) ;
     public List<planning> afficher() ;
     
     

@@ -13,7 +13,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.format.DateTimeFormatter;
-import static java.util.Arrays.equals;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -76,7 +75,7 @@ public class Ajouter_CircuitController implements Initializable {
           
         Valider.setOnAction(c  -> {
 
-            if ( "".equals(Date_F.getValue()) || "".equals(Point_de_depart.getText())  || "".equals (Nbr_Place.getText())  || "".equals (description.getText())  || "".equals (description.getText())  || "".equals (description.getText())  ||  "".equals(Date_d.getValue()) )  {
+            if ( "".equals(Date_F.getValue()) || "".equals(Point_de_depart.getText())  || "".equals (Nbr_Place.getText())  || "".equals (description.getText())  || "".equals (Nbr_Jour.getText())  || "".equals (Nom_Cir.getText())  ||  "".equals(Date_d.getValue())  || "".equals (Id_Uti.getText()) )  {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
                 alert.setTitle("Information Dialog");

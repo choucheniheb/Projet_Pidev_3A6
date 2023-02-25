@@ -117,10 +117,10 @@ public class Test extends Application {
 
 //          invites i = new invites("dhia", "ajmi", "motreb");
 //         inviteCrud ic = new inviteCrud();
- //         ic.ajouter(i);
+//          ic.ajouter(i);
 //        ic.modifier("omar", "saya", "motreb", 2);
- //          ic.supprimer(1);
- //           System.out.println(ic.afficher());
+//           ic.supprimer(1);
+//            System.out.println(ic.afficher());
 
 
        //  planning p = new planning(1,1 , "tej", "4 seasons", "tunis");

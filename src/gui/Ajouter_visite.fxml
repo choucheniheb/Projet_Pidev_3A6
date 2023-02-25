@@ -8,25 +8,44 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px; -fx-border-color: bc9f1e;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Ajouter_visiteController">
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="671.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px; -fx-border-color: bc9f1e;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Ajouter_visiteController">
    <children>
-      <Label layoutX="228.0" layoutY="41.0" text="Ajouter une Visite" textFill="#bc9f1e">
+      <Label alignment="CENTER" layoutX="5.0" layoutY="71.0" prefHeight="22.0" prefWidth="663.0" text="Ajouter une Visite" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="99.0" layoutY="101.0" text="Selectionner un Circuit :" textFill="#bc9f1e" />
-      <Label layoutX="102.0" layoutY="180.0" text="Selectionner un Evenement :" textFill="#bc9f1e" />
-      <ImageView fitHeight="121.0" fitWidth="136.0" layoutX="455.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+      <Label layoutX="73.0" layoutY="165.0" text="Selectionner un Circuit :" textFill="#bc9f1e" />
+      <Label layoutX="76.0" layoutY="244.0" prefHeight="18.0" prefWidth="183.0" text="Selectionner une civilisation:" textFill="#bc9f1e" />
+      <ImageView fitHeight="150.0" fitWidth="194.0" layoutX="36.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Desktop/image/6618280.png" />
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
          </image>
       </ImageView>
-      <Button layoutX="482.0" layoutY="324.0" mnemonicParsing="false" text="Ajouter" textFill="#bc9f1e" />
-      <ComboBox layoutX="101.0" layoutY="128.0" prefWidth="150.0" promptText="Nos Circuit" style="-fx-border-color: bc9f1e;" />
-      <ComboBox layoutX="101.0" layoutY="214.0" prefWidth="150.0" promptText="Nos Evenement" style="-fx-border-color: bc9f1e;" />
-      <Button layoutX="301.0" layoutY="128.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" text="Ajouter un Circuit" textFill="#bc9f1e" />
-      <Button layoutX="301.0" layoutY="214.0" mnemonicParsing="false" text="Ajouter un Evenement" textFill="#bc9f1e" />
-      <Button layoutX="403.0" layoutY="324.0" mnemonicParsing="false" text="Retour" textFill="#bc9f1e" />
+      <Button fx:id="AjouterPlanning" layoutX="553.0" layoutY="380.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" text="Ajouter" textFill="#bc9f1e" />
+      <ComboBox fx:id="Scircuit" layoutX="75.0" layoutY="192.0" prefWidth="150.0" promptText="Nos Circuit" style="-fx-border-color: bc9f1e;" />
+      <ComboBox fx:id="sevenement" layoutX="75.0" layoutY="278.0" prefWidth="150.0" promptText="Nos Civilisation" style="-fx-border-color: bc9f1e;" />
+      <Button fx:id="AjouterCircuit" layoutX="272.0" layoutY="192.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" text="Ajouter un Circuit" textFill="#bc9f1e" />
+      <Button fx:id="Retour" layoutX="432.0" layoutY="380.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" text="Retour" textFill="#bc9f1e" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="456.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/transparent-track-icon-route-icon-location-icon-5fa5e5e7b7fa83.5499115716047078157536-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="31.0" layoutX="560.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/téléchargement-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="438.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="237.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

@@ -9,9 +9,9 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Gestion_VisiteController">
    <children>
-      <Label layoutX="213.0" layoutY="81.0" text="Gestion des Visites" textFill="#bc9f1e">
+      <Label alignment="CENTER" layoutX="6.0" layoutY="47.0" prefHeight="30.0" prefWidth="588.0" text="Gestion des Visites" textFill="#bc9f1e">
          <font>
-            <Font name="System Bold Italic" size="20.0" />
+            <Font name="System Bold Italic" size="27.0" />
          </font>
       </Label>
       <Button fx:id="Ajouter_une_visite" layoutX="53.0" layoutY="187.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="202.0" text="Ajouter une visite" textFill="#bc9f1e">
@@ -24,10 +24,30 @@
             <Font name="Bell MT Bold" size="17.0" />
          </font>
       </Button>
-      <Button fx:id="Retour" layoutX="496.0" layoutY="320.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="70.0" text="Retour" textFill="#bc9f1e" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="Retour" layoutX="485.0" layoutY="328.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="Retour" textFill="#bc9f1e" />
+      <ImageView fitHeight="186.0" fitWidth="202.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Downloads/324352899_1367577970682741_241313171972203892_n.png" />
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="190.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="61.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/4677490.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="30.0" layoutX="349.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Eye-icon-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="16.0" layoutX="487.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
          </image>
       </ImageView>
    </children>

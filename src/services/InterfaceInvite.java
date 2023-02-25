@@ -17,7 +17,7 @@ public interface InterfaceInvite {
     
     public void ajouter(invites i) ;
     public void modifier (String nom_invite , String prenom_invite , String type_invite , int id_invite ) ;
-    public void supprimer ( int id_invite) ;
+    public Boolean supprimer ( int id_invite) ;
     public List<invites> afficher() ;
     
 }

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="921.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Modifier_inviteController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="74.0" prefHeight="22.0" prefWidth="859.0" text="Modifier un Invité" textFill="#bc9f1e">
+         <font>
+            <Font name="Bell MT Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="363.0" layoutY="266.0" prefHeight="26.0" prefWidth="150.0" text="Nom Invité :" textFill="#bc9f1e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="391.0" layoutY="336.0" text="Prénom Invité :" textFill="#bc9f1e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="407.0" layoutY="405.0" text="Type d'Invité :" textFill="#bc9f1e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom" alignment="CENTER" layoutX="333.0" layoutY="296.0" prefHeight="26.0" prefWidth="232.0" promptText="Ecrire nom Invité " style="-fx-background-color: gray;" />
+      <TextField fx:id="prenom" alignment="CENTER" layoutX="334.0" layoutY="363.0" prefHeight="26.0" prefWidth="232.0" promptText="Ecrire prenom Invité " style="-fx-background-color: gray;" />
+      <TextField fx:id="type" alignment="CENTER" layoutX="333.0" layoutY="432.0" prefHeight="26.0" prefWidth="232.0" promptText="Ecrire type Invité " style="-fx-background-color: gray;" />
+      <Button fx:id="modifier_Invité" layoutX="630.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="174.0" style="-fx-background-color: grey;" text="Modifier Invité" textFill="#bc9f1e" />
+      <ImageView fitHeight="209.0" fitWidth="250.0" layoutX="35.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="630.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/3233483.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="107.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/2335114.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Retour" layoutX="94.0" layoutY="507.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="128.0" style="-fx-background-color: gray;" text="Retour" textFill="#bc9f1e" />
+      <ImageView fitHeight="125.0" fitWidth="264.0" layoutX="340.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="30.0" layoutX="639.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/téléchargement-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="107.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="idinvite" layoutX="739.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>

@@ -77,15 +77,19 @@ public class circuitCrud implements InterfaceCircuit {
     }
 
     @Override
-    public void supprimer(int id_circuit) {
-   try {
+    public Boolean supprimer(int id_circuit) {
+        Boolean ok=false;
+        try {
             String requete3 = " DELETE FROM circuits WHERE id_circuit = ? " ;
             PreparedStatement pst = cnx2.prepareStatement(requete3);
             pst.setInt(1,id_circuit);
             pst.executeUpdate();
             System.out.println("circuit supprime");
+            ok=true;
         } catch (SQLException ex) {
-            System.err.println(ex.getMessage());        }    
+            System.err.println(ex.getMessage());        
+        }  
+        return ok;
     }
 
     

@@ -9,17 +9,37 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Gestion_InviteController">
    <children>
-      <Label layoutX="223.0" layoutY="53.0" prefHeight="86.0" prefWidth="179.0" text="Gestion  d'invité" textFill="#bc9f1e">
+      <Label alignment="CENTER" layoutX="6.0" layoutY="34.0" prefHeight="86.0" prefWidth="588.0" text="Gestion  d'invité" textFill="#bc9f1e">
          <font>
-            <Font name="System Bold Italic" size="20.0" />
+            <Font name="System Bold Italic" size="29.0" />
          </font>
       </Label>
       <Button fx:id="Ajouter_un_invité" layoutX="81.0" layoutY="187.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="198.0" text="Ajouter un invité" textFill="#bc9f1e" />
       <Button fx:id="Afficher_les_invités" layoutX="357.0" layoutY="187.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="198.0" text="Afficher les invités" textFill="#bc9f1e" />
-      <Button fx:id="Retour" layoutX="491.0" layoutY="341.0" mnemonicParsing="false" text="Retour" textFill="#bc9f1e" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="Retour" layoutX="459.0" layoutY="338.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="84.0" text="Retour" textFill="#bc9f1e" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Desktop/image/324352899_1367577970682741_241313171972203892_n.png" />
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="176.0" fitWidth="200.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="29.0" layoutX="100.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/4677490.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="371.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Eye-icon-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="14.0" fitWidth="17.0" layoutX="465.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
          </image>
       </ImageView>
    </children>

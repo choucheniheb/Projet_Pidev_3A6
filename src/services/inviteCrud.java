@@ -62,15 +62,19 @@ public class inviteCrud implements InterfaceInvite {
     }
 
     @Override
-    public void supprimer(int id_invite) {
+    public Boolean supprimer(int id_invite) {
+        Boolean ok=false;
    try {
             String requete2 = " DELETE FROM invites WHERE id_invite = ? " ;
             PreparedStatement pst = cnx2.prepareStatement(requete2);
             pst.setInt(1,id_invite);
             pst.executeUpdate();
             System.out.println("invite supprime");
+            ok=true;
         } catch (SQLException ex) {
-            System.err.println(ex.getMessage());        }    
+            System.err.println(ex.getMessage());        
+        }
+        return ok;
     }
 
     

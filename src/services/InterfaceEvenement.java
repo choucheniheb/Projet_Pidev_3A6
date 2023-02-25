@@ -17,7 +17,7 @@ public interface InterfaceEvenement {
     
     public void ajouter(evenements e) ;
     public void modifier( String titre_evenement , String type_evenement , String date_evenement , String lieux_evenement , double prix_evenement , int id_invite , String description_evenement , int id_utilisateur , int id_evenement);
-    public void supprimer ( int id_evenement) ;
+    public Boolean supprimer ( int id_evenement) ;
     public List<evenements> afficher() ;
     
     

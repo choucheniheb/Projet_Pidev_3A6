@@ -7,35 +7,70 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Accueil_Circuit_EvenementController">
+<AnchorPane id="AnchorPane" prefHeight="571.0" prefWidth="937.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px; -fx-background-image: bc9f1e; -fx-border-image-width: 3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Accueil_Circuit_EvenementController">
    <children>
-      <Button fx:id="Gestion_Circuit" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="315.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="170.0" text="Gestion Circuit" textFill="#bc9f1e">
+      <Button fx:id="Gestion_Circuit" alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="443.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="213.0" text="Gestion Circuit" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font></Button>
-      <Button fx:id="Gestion_Invite" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="173.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="170.0" text="Gestion Invite" textFill="#bc9f1e">
+      <Button fx:id="Gestion_Invite" alignment="CENTER" contentDisplay="CENTER" layoutX="356.0" layoutY="435.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Invite" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font></Button>
-      <Button fx:id="Gestion_Planning" alignment="CENTER" contentDisplay="CENTER" layoutX="378.0" layoutY="248.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="170.0" text="Gestion Planning" textFill="#bc9f1e">
+      <Button fx:id="Gestion_Planning" alignment="CENTER" contentDisplay="CENTER" layoutX="502.0" layoutY="329.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Planning" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font></Button>
-      <Button fx:id="Gestion_Evenement" alignment="CENTER" contentDisplay="CENTER" layoutX="378.0" layoutY="315.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="170.0" text="Gestion Evenement" textFill="#bc9f1e">
+      <Button fx:id="Gestion_Evenement" alignment="CENTER" contentDisplay="CENTER" layoutX="632.0" layoutY="443.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Evenement" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font></Button>
-      <Button fx:id="Gestion_Visite" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="248.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="170.0" text="Gestion Visite" textFill="#bc9f1e">
+      <Button fx:id="Gestion_Visite" alignment="CENTER" contentDisplay="CENTER" layoutX="213.0" layoutY="325.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Visite" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font></Button>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-10.0" layoutY="11.0" prefHeight="40.0" prefWidth="607.0" text="Bienvenu" textFill="#bc9f1e">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="67.0" prefHeight="40.0" prefWidth="910.0" text="Bienvenu a Hidden Tunisia" textFill="#bc9f1e">
          <font>
-            <Font name="Bell MT" size="32.0" />
+            <Font name="Bell MT" size="52.0" />
          </font></Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="228.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="246.0" fitWidth="252.0" layoutX="362.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Desktop/image/324352899_1367577970682741_241313171972203892_n.png" />
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="125.0" fitWidth="224.0" layoutX="105.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="125.0" fitWidth="281.0" layoutX="632.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="512.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="43.0" layoutX="224.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="638.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="370.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="105.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
          </image>
       </ImageView>
    </children>

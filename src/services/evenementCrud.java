@@ -74,15 +74,19 @@ public class evenementCrud implements InterfaceEvenement {
 
     }
 
-    public void supprimer(int id_evenement) {
+    public Boolean supprimer(int id_evenement) {
+        Boolean ok=false;
    try {
             String requete3 = " DELETE FROM evenements WHERE id_evenement = ? " ;
             PreparedStatement pst = cnx2.prepareStatement(requete3);
             pst.setInt(1,id_evenement);
             pst.executeUpdate();
             System.out.println("evenement supprime");
+            ok=true;
         } catch (SQLException ex) {
-            System.err.println(ex.getMessage());        }    
+            System.err.println(ex.getMessage());        
+        }
+        return ok;
     }
 
     

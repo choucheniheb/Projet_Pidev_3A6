@@ -9,17 +9,37 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Gestion_planningController">
    <children>
-      <Label layoutX="217.0" layoutY="105.0" text="Gestion des Planning" textFill="#bc9f1e">
+      <Label alignment="CENTER" layoutX="9.0" layoutY="50.0" prefHeight="27.0" prefWidth="582.0" text="Gestion des Planning" textFill="#bc9f1e">
          <font>
-            <Font name="System Bold Italic" size="18.0" />
+            <Font name="System Bold Italic" size="26.0" />
          </font>
       </Label>
       <Button fx:id="Ajouter_un_Planning" layoutX="89.0" layoutY="200.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="178.0" text="Ajouter un Planning" textFill="#bc9f1e" />
       <Button fx:id="Afficher_les_Planning" layoutX="342.0" layoutY="200.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="178.0" text="Afficher les Planning" textFill="#bc9f1e" />
-      <Button fx:id="Retour" layoutX="499.0" layoutY="329.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="70.0" text="Retour" textFill="#bc9f1e" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="Retour" layoutX="481.0" layoutY="329.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="88.0" text="Retour" textFill="#bc9f1e" />
+      <ImageView fitHeight="177.0" fitWidth="186.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Downloads/324352899_1367577970682741_241313171972203892_n.png" />
+            <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="187.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="16.0" layoutX="487.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="26.0" layoutX="96.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/4677490.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="26.0" layoutX="347.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Eye-icon-removebg-preview.png" />
          </image>
       </ImageView>
    </children>
