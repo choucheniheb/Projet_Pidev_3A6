@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.embed.swing.SwingNode?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -31,7 +32,7 @@
             <Font name="Bell MT Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="59.0" layoutY="277.0" text="Lieux :" textFill="#bc9f1e">
+      <Label layoutX="59.0" layoutY="277.0" text="Lieu :" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font>
@@ -41,17 +42,7 @@
             <Font name="Bell MT Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="66.0" layoutY="403.0" text="Invité :" textFill="#bc9f1e">
-         <font>
-            <Font name="Bell MT Bold" size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="68.0" layoutY="483.0" text="Description :" textFill="#bc9f1e">
-         <font>
-            <Font name="Bell MT Bold" size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="67.0" layoutY="448.0" text="Utilisateur :" textFill="#bc9f1e">
+      <Label layoutX="41.0" layoutY="406.0" text="Description :" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font>
@@ -60,16 +51,14 @@
       <TextField fx:id="type" layoutX="156.0" layoutY="228.0" prefHeight="26.0" prefWidth="175.0" promptText="Type Evenement" />
       <TextField fx:id="lieux" layoutX="156.0" layoutY="271.0" prefHeight="26.0" prefWidth="175.0" promptText="Lieux Evenement" />
       <TextField fx:id="prix" layoutX="159.0" layoutY="356.0" prefHeight="26.0" prefWidth="175.0" promptText="Prix Evenement" />
-      <TextField fx:id="invite" layoutX="159.0" layoutY="397.0" prefHeight="26.0" prefWidth="175.0" />
-      <TextField fx:id="utilisateur" layoutX="159.0" layoutY="442.0" prefHeight="26.0" prefWidth="175.0" />
-      <TextField fx:id="description" layoutX="159.0" layoutY="477.0" prefHeight="80.0" prefWidth="312.0" promptText="Votre description" />
+      <TextField fx:id="description" layoutX="159.0" layoutY="394.0" prefHeight="101.0" prefWidth="312.0" promptText="Votre description" />
       <DatePicker fx:id="date" layoutX="156.0" layoutY="315.0" promptText="Date Evenement" />
-      <Button fx:id="Ajouter_Evenement" layoutX="645.0" layoutY="481.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" text="Ajouter Evenement" textFill="#bc9f1e">
+      <Button fx:id="Ajouter_Evenement" layoutX="345.0" layoutY="518.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="131.0" text="Ajouter Evenement" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="Retour" layoutX="499.0" layoutY="481.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="95.0" text="Retour" textFill="#bc9f1e">
+      <Button fx:id="Retour" layoutX="171.0" layoutY="522.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="95.0" text="Retour" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font>
@@ -79,17 +68,17 @@
             <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="651.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="26.0" fitWidth="12.0" layoutX="339.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/téléchargement-removebg-preview.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="506.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="57.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="221.0" fitWidth="232.0" layoutX="541.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="157.0" fitWidth="95.0" layoutX="376.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/4088125.png" />
          </image>
@@ -99,5 +88,6 @@
             <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
          </image>
       </ImageView>
+      <SwingNode fx:id="swingNode" layoutX="645.0" layoutY="218.0" />
    </children>
 </AnchorPane>

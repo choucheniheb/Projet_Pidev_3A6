@@ -5,6 +5,7 @@
  */
 package services;
 
+import entities.Utilisateur;
 import entities.circuit;
 import utils.MyConnection;
 import java.sql.Connection;
@@ -111,7 +112,12 @@ public class circuitCrud implements InterfaceCircuit {
                 c.setNbr_place_dispo(rs.getInt(5));
                 c.setDescription_circuit(rs.getString(6));
                 c.setNbr_jour_circuit(rs.getInt(7));
-                c.setId_utilisateur(rs.getInt(8));
+              //c.setId_utilisateur(rs.getInt(8));
+                Utilisateur user = new Utilisateur();
+                user.setId_utilisateur(rs.getInt(8));
+                c.setId_utilisateur(user);
+                
+                
                 c.setNom_circuit(rs.getString(9));
                 
 

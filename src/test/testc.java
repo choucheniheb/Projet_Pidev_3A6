@@ -5,6 +5,7 @@
  */
 package test;
 
+import entities.Utilisateur;
 import entities.circuit;
 import entities.evenements;
 import entities.invites;
@@ -22,22 +23,26 @@ public class testc {
     
     
     public static void main(String[] args) {
-        evenements event = new evenements("test", "test", "2023-12-12", "test", 125.0, 1, "test", 1);
-
-        evenementCrud ec = new evenementCrud() ;
+        
+        
+         Utilisateur user = new Utilisateur(1, 1, "samar", "ajmi", "sama@gmail.com", "26404384", "SAMOURA", "ESPRIT", "2000-01-04");
+         
+//        evenements event = new evenements("test", "test", "2023-12-12", "test", 125.0, 1, "test", 1);
+//
+  //      evenementCrud ec = new evenementCrud() ;
          //ec.ajouter(event);
-         ec.modifier("ZAAB", "test", "2023-12-12", "test", 125.0 , 1, "test", 1, 13);
+    //     ec.modifier("ZAAB", "test", "2023-12-12", "test", 125.0 , 1, "test", 1, 13);
         // ec.supprimer(1);
-        System.out.println(ec.afficher());
+      //  System.out.println(ec.afficher());
 
 
 
- //    circuit c = new circuit("Mariotte", "2023-04-15", "2023-04-16", 70,"anniv", 4, 4, "ANNIV");
- //        circuitCrud cc = new circuitCrud();
- //       cc.ajouter(c);
- //     cc.modifier("Mariotte", "2023-04-15", "2023-04-16", 70,"HI", 4,"anniv", 4, "ANNIV",6);;
- //     cc.supprimer(8); 
- //      System.out.println(cc.afficher());
+     circuit c = new circuit("Mariotte", "2023-04-15", "2023-04-16", 70,"anniv", 4, user, "ANNIV");
+         circuitCrud cc = new circuitCrud();
+        cc.ajouter(c);
+    //  cc.modifier("Mariotte", "2023-04-15", "2023-04-16", 70,"HI", 4,"anniv", 4, "ANNIV",6);;
+     // cc.supprimer(8); 
+      // System.out.println(cc.afficher());
 
  //         invites i = new invites("iheb", "ch", "motreb");
  //        inviteCrud ic = new inviteCrud();

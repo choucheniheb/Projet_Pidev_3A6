@@ -5,8 +5,16 @@
  */
 package gui;
 
+import entities.Utilisateur;
 import entities.evenements;
+import entities.invites;
+import java.awt.BorderLayout;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -16,6 +24,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.embed.swing.SwingNode;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -27,6 +36,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javax.swing.JPanel;
+import org.json.JSONObject;
+import org.openstreetmap.gui.jmapviewer.Coordinate;
+import org.openstreetmap.gui.jmapviewer.JMapViewer;
+import org.openstreetmap.gui.jmapviewer.MapMarkerDot;
+import org.openstreetmap.gui.jmapviewer.interfaces.ICoordinate;
 import services.evenementCrud;
 import utils.MyConnection;
 
@@ -61,27 +76,123 @@ public class Ajouter_EvenementController implements Initializable {
     private Button Ajouter_Evenement;
     @FXML
     private Button Retour;
-
+     @FXML
+    private SwingNode swingNode;
     /**
      * Initializes the controller class.
      */
     
     
     Connection cnx2 ;
+   
     
     public Ajouter_EvenementController() {
         cnx2 = MyConnection.getInstance().getCnx();
     }
     
+    Utilisateur user = new Utilisateur(1, 1, "samar", "ajmi", "sama@gmail.com", "26404384", "SAMOURA", "ESPRIT", "2000-01-04");
+    invites inv = new invites(1, "DHIA", "AJMI", "MOTREB");
     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
+        
+        
+        
+        JMapViewer mapViewer = new JMapViewer();
+
+        // Set the initial position of the map
+        mapViewer.setDisplayPosition(new Coordinate(34.8516, 10.7605), 7);
+
+// Add a mouse listener to the mapViewer
+        mapViewer.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // Get the coordinates of the clicked point
+                //Coordinate clickedPoint = mapViewer.getPosition(e.getPoint());
+                ICoordinate clickedPoint = mapViewer.getPosition(e.getPoint());
+                //org.openstreetmap.gui.jmapviewer.Coordinate clickedPoint = mapViewer.getPosition(e.getPoint());
+
+                // Do something with the clicked coordinates, e.g. create a marker
+                MapMarkerDot marker = new MapMarkerDot((Coordinate) clickedPoint);
+                mapViewer.addMapMarker(marker);
+
+                // Perform reverse geocoding to get the name of the country
+                String countryName = null;
+                try {
+                    String urlString = "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat="
+                            + clickedPoint.getLat() + "&lon=" + clickedPoint.getLon();
+                    URL url = new URL(urlString);
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                    conn.setRequestMethod("GET");
+                    conn.setRequestProperty("User-Agent", "Mozilla/5.0");
+
+                    BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                    String inputLine;
+                    StringBuilder response = new StringBuilder();
+                    while ((inputLine = in.readLine()) != null) {
+                        response.append(inputLine);
+                    }
+                    in.close();
+
+                    JSONObject json = new JSONObject(response.toString());
+                    countryName = json.getString("display_name");
+                    // Extract the country name from the display name
+                    int index = countryName.lastIndexOf(",");
+                    if (index != -1) {
+                        countryName = countryName.substring(index + 2);
+                    }
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+
+                // Print the name of the country
+                System.out.println("Selected country: " + countryName);
+                lieux.setText(countryName);
+
+            }
+        });
+
+        // Create a JPanel and add the mapViewer to it
+        JPanel panel = new JPanel(new BorderLayout());
+        panel.add(mapViewer, BorderLayout.CENTER);
+
+        // Set the JPanel as the content of the SwingNode
+        swingNode.setContent(panel) ;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
           
         Ajouter_Evenement.setOnAction(e  -> {
+            
+            
+            String descriptionText = description.getText().toLowerCase();
+                if (descriptionText.contains("shit") || descriptionText.contains("fuck")|| descriptionText.contains("test")) 
+                {
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Information Dialog");
+                    alert.setHeaderText(null);
+                    alert.setContentText("La description contient des mots interdits!");
+                    alert.show();
+                }
+   
 
-            if (  "".equals(titre.getText())  || "".equals (type.getText())  || "".equals (lieux.getText())  || "".equals (prix.getText())  || "".equals (invite.getText())  ||    "".equals (utilisateur.getText())  || "".equals (description.getText())  ||  "".equals(date.getValue()) )  {
+                else if (  "".equals(titre.getText())  || "".equals (type.getText())  || "".equals (lieux.getText())  || "".equals (prix.getText())  ||   "".equals (description.getText())  ||  "".equals(date.getValue()) )  {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
                 alert.setTitle("Information Dialog");
@@ -97,7 +208,7 @@ public class Ajouter_EvenementController implements Initializable {
                 try {
 
                     evenementCrud ajout = new evenementCrud();
-                   evenements ev = new evenements(titre.getText(), type.getText(), date.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")), lieux.getText(), Double.parseDouble(prix.getText()), Integer.parseInt(invite.getText()), description.getText(), Integer.parseInt(utilisateur.getText()));
+                   evenements ev = new evenements(titre.getText(), type.getText(), date.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")), lieux.getText(), Double.parseDouble(prix.getText()), inv , description.getText(), user );
 
                     //verification de l'unicite par le nom de la demande le budget la description et la date limite 
                     String sql = "SELECT * FROM evenements WHERE Titre_evenement = ? AND Type_evenement = ? AND Date_evenement = ? AND Lieux_evenement = ? AND Prix_evenement = ? AND Id_invite = ? AND Description_evenement = ? AND Id_utilisateur = ?";

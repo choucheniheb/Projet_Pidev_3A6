@@ -21,14 +21,14 @@ public class evenements {
     private String date_evenement ;
     private String lieux_evenement ;
     private Double prix_evenement;
-    private int id_invite;
+    private invites id_invite;
     private String description_evenement ; 
-    private int id_utilisateur;
+    private Utilisateur id_utilisateur;
 
     public evenements() {
     }
 
-    public evenements(String titre_evenement, String type_evenement, String lieux_evenement, Double prix_evenement, int id_invite, String description_evenement, int id_utilisateur) {
+    public evenements(String titre_evenement, String type_evenement, String lieux_evenement, Double prix_evenement, invites id_invite, String description_evenement, Utilisateur id_utilisateur) {
         this.titre_evenement = titre_evenement;
         this.type_evenement = type_evenement;
         this.lieux_evenement = lieux_evenement;
@@ -38,7 +38,7 @@ public class evenements {
         this.id_utilisateur = id_utilisateur;
     }
 
-    public evenements(int id_evenement, String titre_evenement, String type_evenement, String date_evenement, String lieux_evenement, Double prix_evenement, int id_invite, String description_evenement, int id_utilisateur) {
+    public evenements(int id_evenement, String titre_evenement, String type_evenement, String date_evenement, String lieux_evenement, Double prix_evenement, invites id_invite, String description_evenement, Utilisateur id_utilisateur) {
         this.id_evenement = id_evenement;
         this.titre_evenement = titre_evenement;
         this.type_evenement = type_evenement;
@@ -51,7 +51,7 @@ public class evenements {
     }
 
     
-    public evenements(String titre_evenement, String type_evenement, String date_evenement, String lieux_evenement, Double prix_evenement, int id_invite, String description_evenement, int id_utilisateur) {
+    public evenements(String titre_evenement, String type_evenement, String date_evenement, String lieux_evenement, Double prix_evenement, invites id_invite, String description_evenement, Utilisateur id_utilisateur) {
         this.titre_evenement = titre_evenement;
         this.type_evenement = type_evenement;
         this.date_evenement = date_evenement;
@@ -117,15 +117,25 @@ public class evenements {
     public void setPrix_evenement(Double prix_evenement) {
         this.prix_evenement = prix_evenement;
     }
+    
+    
+    
 
     public int getId_invite() {
+        return id_invite.getId_invite();
+    }
+    
+    public invites getinvites() {
         return id_invite;
     }
-
-    public void setId_invite(int id_invite) {
+    
+    public void setId_invite(invites id_invite) {
         this.id_invite = id_invite;
     }
 
+    
+    
+    
     public String getDescription_evenement() {
         return description_evenement;
     }
@@ -134,11 +144,16 @@ public class evenements {
         this.description_evenement = description_evenement;
     }
 
+    
     public int getId_utilisateur() {
+        return id_utilisateur.getId_utilisateur();
+    }
+    
+    public Utilisateur getUtilisateur() {
         return id_utilisateur;
     }
 
-    public void setId_utilisateur(int id_utilisateur) {
+    public void setId_utilisateur(Utilisateur id_utilisateur) {
         this.id_utilisateur = id_utilisateur;
     }
 

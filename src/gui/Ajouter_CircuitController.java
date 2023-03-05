@@ -5,6 +5,7 @@
  */
 package gui;
 
+import entities.Utilisateur;
 import entities.circuit;
 import java.io.IOException;
 import java.net.URL;
@@ -51,7 +52,6 @@ public class Ajouter_CircuitController implements Initializable {
     private TextField description;
     @FXML
     private TextField Nbr_Jour;
-    @FXML
     private TextField Id_Uti;
     @FXML
     private TextField Nom_Cir;
@@ -69,13 +69,28 @@ public class Ajouter_CircuitController implements Initializable {
         cnx2 = MyConnection.getInstance().getCnx();
     }
     
+    
+    Utilisateur user = new Utilisateur(1, 1, "samar", "ajmi", "sama@gmail.com", "26404384", "SAMOURA", "ESPRIT", "2000-01-04");
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
           
         Valider.setOnAction(c  -> {
+            
+            String descriptionText = description.getText().toLowerCase();
+                if (descriptionText.contains("shit") || descriptionText.contains("fuck")) 
+                {
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Information Dialog");
+                    alert.setHeaderText(null);
+                    alert.setContentText("La description contient des mots interdits!");
+                    alert.show();
+                }
+    
 
-            if ( "".equals(Date_F.getValue()) || "".equals(Point_de_depart.getText())  || "".equals (Nbr_Place.getText())  || "".equals (description.getText())  || "".equals (Nbr_Jour.getText())  || "".equals (Nom_Cir.getText())  ||  "".equals(Date_d.getValue())  || "".equals (Id_Uti.getText()) )  {
+            else if ( "".equals(Date_F.getValue()) || "".equals(Point_de_depart.getText())  || "".equals (Nbr_Place.getText())  || "".equals (description.getText())  || "".equals (Nbr_Jour.getText())  || "".equals (Nom_Cir.getText())  ||  "".equals(Date_d.getValue()) )  {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
                 alert.setTitle("Information Dialog");
@@ -91,7 +106,7 @@ public class Ajouter_CircuitController implements Initializable {
                 try {
 
                     circuitCrud ajout = new circuitCrud();
-                    circuit ci = new circuit(Point_de_depart.getText(),Date_d.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) , Date_F.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),Integer.parseInt(Nbr_Place.getText()), description.getText(), Integer.parseInt(Nbr_Jour.getText()), Integer.parseInt(Id_Uti.getText()), Nom_Cir.getText());
+                    circuit ci = new circuit(Point_de_depart.getText(),Date_d.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) , Date_F.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),Integer.parseInt(Nbr_Place.getText()), description.getText(), Integer.parseInt(Nbr_Jour.getText()),  user  , Nom_Cir.getText());
                     
                     //verification de l'unicite par le nom de la demande le budget la description et la date limite 
                     String sql = "SELECT * FROM circuits WHERE point_depat_circuit = ? AND date_debut_circuit = ? AND date_fin_circuit = ? AND nbr_place_dispo = ? AND description_circuit = ? AND nbr_jour_circuit = ? AND id_utilisateur = ? AND nom_circuit = ?";

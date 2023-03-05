@@ -17,13 +17,13 @@ public class circuit {
     private int nbr_place_dispo ;
     private String description_circuit ; 
     private int nbr_jour_circuit ;
-    private int id_utilisateur;
+    private Utilisateur id_utilisateur;
     private String nom_circuit ;
 
     public circuit() {
     }
 
-    public circuit(int id_circuit, String point_depart_circuit, String date_debut_circuit, String date_fin_circuit, int nbr_place_dispo, String description_circuit, int nbr_jour_circuit, int id_utilisateur, String nom_circuit) {
+    public circuit(int id_circuit, String point_depart_circuit, String date_debut_circuit, String date_fin_circuit, int nbr_place_dispo, String description_circuit, int nbr_jour_circuit, Utilisateur id_utilisateur, String nom_circuit) {
         this.id_circuit = id_circuit;
         this.point_depart_circuit = point_depart_circuit;
         this.date_debut_circuit = date_debut_circuit;
@@ -35,7 +35,7 @@ public class circuit {
         this.nom_circuit = nom_circuit;
     }
 
-    public circuit(String point_depart_circuit, String date_debut_circuit, String date_fin_circuit, int nbr_place_dispo, String description_circuit, int nbr_jour_circuit, int id_utilisateur,  String nom_circuit) {
+    public circuit(String point_depart_circuit, String date_debut_circuit, String date_fin_circuit, int nbr_place_dispo, String description_circuit, int nbr_jour_circuit, Utilisateur id_utilisateur,  String nom_circuit) {
         this.point_depart_circuit = point_depart_circuit;
         this.date_debut_circuit = date_debut_circuit;
         this.date_fin_circuit = date_fin_circuit;
@@ -104,10 +104,14 @@ public class circuit {
     }
 
     public int getId_utilisateur() {
+        return id_utilisateur.getId_utilisateur();
+    }
+    
+    public Utilisateur getUtilisateur() {
         return id_utilisateur;
     }
 
-    public void setId_utilisateur(int id_utilisateur) {
+    public void setId_utilisateur(Utilisateur id_utilisateur) {
         this.id_utilisateur = id_utilisateur;
     }
 

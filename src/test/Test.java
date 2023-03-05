@@ -56,7 +56,9 @@ public class Test extends Application {
         // Code pour initialiser votre interface
 
         // Charger le fichier FXML
-        Parent root = FXMLLoader.load(getClass().getResource("/gui/Accueil_Circuit_Evenement.fxml"));
+      Parent root = FXMLLoader.load(getClass().getResource("/gui/Accueil_Circuit_Evenement.fxml"));
+      //      Parent root = FXMLLoader.load(getClass().getResource("/gui/MenuAppWithChart.fxml"));
+        
 
         // Créer une scène à partir de la racine
         Scene scene = new Scene(root);

@@ -5,7 +5,9 @@
  */
 package services;
 
+import entities.Utilisateur;
 import entities.evenements;
+import entities.invites;
 import utils.MyConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -106,9 +108,16 @@ public class evenementCrud implements InterfaceEvenement {
                 e.setDate_evenement(rs.getString(4));
                 e.setLieux_evenement(rs.getString(5));
                 e.setPrix_evenement(rs.getDouble(6));
-                e.setId_invite(rs.getInt(7));
+             // e.setId_invite(rs.getInt(7));
+                invites inv = new invites();
+                inv.setId_invite(rs.getInt(7));
+                e.setId_invite(inv);
+                
                 e.setDescription_evenement(rs.getString(8));
-                e.setId_utilisateur(rs.getInt(9));
+               // e.setId_utilisateur(rs.getInt(9));
+               Utilisateur user = new Utilisateur();
+                user.setId_utilisateur(rs.getInt(9));
+                e.setId_utilisateur(user);
 
 
                 
