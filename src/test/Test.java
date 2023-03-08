@@ -57,7 +57,7 @@ public class Test extends Application {
         // Charger le fichier FXML
         
         
-           Parent root = FXMLLoader.load(getClass().getResource("/gui/RandomTunisiaFacts.fxml"));
+           Parent root = FXMLLoader.load(getClass().getResource("/gui/afficherev.fxml"));
   
 
             

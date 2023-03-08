@@ -30,6 +30,8 @@ public class RandomTunisiaFactsController {
     private Button Retour;
     
     
+    
+    
 
     @FXML
     private void generateFact() {

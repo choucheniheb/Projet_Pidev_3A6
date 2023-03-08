@@ -43,8 +43,6 @@ public class Afficher_VisitesController implements Initializable {
     @FXML
     private TableColumn<visites, Button> delete;
     @FXML
-    private TableColumn<visites, Button> modifier;
-    @FXML
     private Button Retour;
 
     /**

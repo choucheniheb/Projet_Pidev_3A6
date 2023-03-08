@@ -12,6 +12,7 @@ import java.awt.BorderLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -35,6 +36,9 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javax.swing.JPanel;
 import org.json.JSONObject;
@@ -50,10 +54,6 @@ import utils.MyConnection;
  *
  * @author MSI
  */
-
-
-
-
 public class Ajouter_EvenementController implements Initializable {
 
     @FXML
@@ -65,10 +65,6 @@ public class Ajouter_EvenementController implements Initializable {
     @FXML
     private TextField prix;
     @FXML
-    private TextField invite;
-    @FXML
-    private TextField utilisateur;
-    @FXML
     private TextField description;
     @FXML
     private DatePicker date;
@@ -76,30 +72,29 @@ public class Ajouter_EvenementController implements Initializable {
     private Button Ajouter_Evenement;
     @FXML
     private Button Retour;
-     @FXML
+    @FXML
     private SwingNode swingNode;
+
+    private String path;
+    File selectedFile;
     /**
      * Initializes the controller class.
      */
-    
-    
-    Connection cnx2 ;
-   
-    
+
+    Connection cnx2;
+    @FXML
+    private ImageView imArt;
+
     public Ajouter_EvenementController() {
         cnx2 = MyConnection.getInstance().getCnx();
     }
-    
+
     Utilisateur user = new Utilisateur(1, 1, "samar", "ajmi", "sama@gmail.com", "26404384", "SAMOURA", "ESPRIT", "2000-01-04");
     invites inv = new invites(1, "DHIA", "AJMI", "MOTREB");
-    
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
-        
-        
-        
+
         JMapViewer mapViewer = new JMapViewer();
 
         // Set the initial position of the map
@@ -159,40 +154,18 @@ public class Ajouter_EvenementController implements Initializable {
         panel.add(mapViewer, BorderLayout.CENTER);
 
         // Set the JPanel as the content of the SwingNode
-        swingNode.setContent(panel) ;
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        Ajouter_Evenement.setOnAction(e  -> {
-            
-            
-            String descriptionText = description.getText().toLowerCase();
-                if (descriptionText.contains("shit") || descriptionText.contains("fuck")|| descriptionText.contains("test")) 
-                {
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setTitle("Information Dialog");
-                    alert.setHeaderText(null);
-                    alert.setContentText("La description contient des mots interdits!");
-                    alert.show();
-                }
-   
+        swingNode.setContent(panel);
 
-                else if (  "".equals(titre.getText())  || "".equals (type.getText())  || "".equals (lieux.getText())  || "".equals (prix.getText())  ||   "".equals (description.getText())  ||  "".equals(date.getValue()) )  {
+        Ajouter_Evenement.setOnAction(e -> {
+
+            String descriptionText = description.getText().toLowerCase();
+            if (descriptionText.contains("shit") || descriptionText.contains("fuck") || descriptionText.contains("test")) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Information Dialog");
+                alert.setHeaderText(null);
+                alert.setContentText("La description contient des mots interdits!");
+                alert.show();
+            } else if ("".equals(titre.getText()) || "".equals(type.getText()) || "".equals(lieux.getText()) || "".equals(prix.getText()) || "".equals(description.getText()) || "".equals(date.getValue())) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
                 alert.setTitle("Information Dialog");
@@ -208,7 +181,7 @@ public class Ajouter_EvenementController implements Initializable {
                 try {
 
                     evenementCrud ajout = new evenementCrud();
-                   evenements ev = new evenements(titre.getText(), type.getText(), date.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")), lieux.getText(), Double.parseDouble(prix.getText()), inv , description.getText(), user );
+                    evenements ev = new evenements(titre.getText(), type.getText(), date.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")), lieux.getText(), Double.parseDouble(prix.getText()), inv, description.getText(), user, path);
 
                     //verification de l'unicite par le nom de la demande le budget la description et la date limite 
                     String sql = "SELECT * FROM evenements WHERE Titre_evenement = ? AND Type_evenement = ? AND Date_evenement = ? AND Lieux_evenement = ? AND Prix_evenement = ? AND Id_invite = ? AND Description_evenement = ? AND Id_utilisateur = ?";
@@ -217,7 +190,7 @@ public class Ajouter_EvenementController implements Initializable {
                     stmt.setString(1, ev.getTitre_evenement());
                     stmt.setString(2, ev.getType_evenement());
                     stmt.setString(3, ev.getDate_evenement());
-                    stmt.setString(4, ev.getLieux_evenement());                    
+                    stmt.setString(4, ev.getLieux_evenement());
                     stmt.setDouble(5, ev.getPrix_evenement());
                     stmt.setInt(6, ev.getId_invite());
                     stmt.setString(7, ev.getDescription_evenement());
@@ -234,7 +207,7 @@ public class Ajouter_EvenementController implements Initializable {
                         alert.setContentText("Evenement existe deja!");
 
                         alert.show();
-                        return; 
+                        return;
                     } else {
 
                         ajout.ajouter(ev);
@@ -263,11 +236,7 @@ public class Ajouter_EvenementController implements Initializable {
             }
         }
         );
-        
-        
-        
-        
-        
+
         Retour.setOnAction(Retour -> {
 
             try {
@@ -283,8 +252,35 @@ public class Ajouter_EvenementController implements Initializable {
             }
 
         });
-        
-        
-    }     
-    
+
+    }
+
+    @FXML
+    private void addImage(javafx.scene.input.MouseEvent event) {
+
+        //FileChooser.ExtensionFilter imageFilter = new FileChooser.ExtensionFilter("Image Files", ".jpg", ".png");
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Select a photo");
+        fileChooser.setInitialDirectory(new File("C:\\Users\\MSI\\Desktop\\Projet_Pidev_3A6\\src\\gui\\image"));
+        //fileChooser.getExtensionFilters().add(imageFilter);
+        Image image = null;
+        try {
+            image = new Image(fileChooser.showOpenDialog(null).toURI().toString());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        if (image != null) {
+            imArt.setImage(image);
+            selectedFile = fileChooser.showOpenDialog(null);
+            path = selectedFile.getAbsolutePath();
+            System.out.println(path);
+        } else {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("No photo Selected");
+            alert.setHeaderText("Please select a photo");
+            alert.showAndWait();
+        }
+    }
+
 }

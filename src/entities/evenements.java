@@ -24,6 +24,8 @@ public class evenements {
     private invites id_invite;
     private String description_evenement ; 
     private Utilisateur id_utilisateur;
+    private String image;
+    
 
     public evenements() {
     }
@@ -61,11 +63,32 @@ public class evenements {
         this.description_evenement = description_evenement;
         this.id_utilisateur = id_utilisateur;
     }
+    public evenements(String titre_evenement, String type_evenement, String date_evenement, String lieux_evenement, Double prix_evenement, invites id_invite, String description_evenement, Utilisateur id_utilisateur,String image) {
+        this.titre_evenement = titre_evenement;
+        this.type_evenement = type_evenement;
+        this.date_evenement = date_evenement;
+        this.lieux_evenement = lieux_evenement;
+        this.prix_evenement = prix_evenement;
+        this.id_invite = id_invite;
+        this.description_evenement = description_evenement;
+        this.id_utilisateur = id_utilisateur;
+        this.image = image;
+    }
     
     
-   
     
     
+    
+    
+    
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
     
     
     

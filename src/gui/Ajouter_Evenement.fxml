@@ -78,9 +78,9 @@
             <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="157.0" fitWidth="95.0" layoutX="376.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imArt" fitHeight="157.0" fitWidth="95.0" layoutX="376.0" layoutY="258.0" onMouseClicked="#addImage" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@image/4088125.png" />
+            <Image url="@image/333231895_3395678830746145_5512430937863302657_n.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="335.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">

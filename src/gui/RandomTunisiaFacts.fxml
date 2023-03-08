@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RandomTunisiaFactsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="554.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RandomTunisiaFactsController">
     <top>
-        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="400.0" text="Random Facts About Tunisia" textFill="#bc9f1e">
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="556.0" text="Random Facts About Tunisia" textFill="#bc9f1e">
             <style>
                 -fx-font-family: "System Bold";
                 -fx-font-size: 18px;-fx-border-color: bc9f1e; -fx-border-width: 5;</style>
@@ -22,7 +22,7 @@
                <Image url="@image/324352899_1367577970682741_241313171972203892_n.png" />
             </image>
          </ImageView>
-            <Label fx:id="factLabel" alignment="CENTER" contentDisplay="CENTER" text="La Tunisie est un pays situé en Afrique du Nord, bordé par la mer Méditerranée à l'est et au nord-est, l'Algérie à l'ouest et la Libye au sud-est. Voici quelques éléments de sa culture :" textFill="#bc9f1e" wrapText="true">
+            <Label fx:id="factLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="444.0" text="La Tunisie est un pays situé en Afrique du Nord, bordé par la mer Méditerranée à l'est et au nord-est, l'Algérie à l'ouest et la Libye au sud-est. Voici quelques éléments de sa culture :" textFill="#bc9f1e" wrapText="true">
                 <style>
                     -fx-font-family: "System Regular";
                     -fx-font-size: 16px;

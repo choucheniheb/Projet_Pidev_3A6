@@ -5,9 +5,10 @@
         <group>
             <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/test/Test.java</file>
             <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/Afficher_VisitesController.java</file>
-            <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/Afficher_EvenementController.java</file>
-            <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/Ajouter_visiteController.java</file>
-            <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/SideNavigationPanel.fxml</file>
+            <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/afficherev.fxml</file>
+            <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/AfficherevController.java</file>
+            <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/cadrev.fxml</file>
+            <file>file:/C:/Users/MSI/Desktop/Projet_Pidev_3A6/src/gui/CadrevController.java</file>
         </group>
     </open-files>
 </project-private>

@@ -19,10 +19,9 @@
       <TableView fx:id="VisiteTV" layoutX="144.0" layoutY="121.0" prefHeight="383.0" prefWidth="534.0">
          <columns>
             <TableColumn fx:id="idciv" prefWidth="100.7999906539917" text="ID Civilisation" />
-            <TableColumn fx:id="idc" prefWidth="94.39996337890625" text="ID Circuit" />
-            <TableColumn fx:id="idv" prefWidth="104.00004577636719" text="ID Visite" />
-            <TableColumn fx:id="delete" prefWidth="118.4000244140625" text="action" />
-            <TableColumn fx:id="modifier" prefWidth="115.199951171875" text="action" />
+            <TableColumn fx:id="idc" prefWidth="166.3999786376953" text="ID Circuit" />
+            <TableColumn fx:id="idv" prefWidth="141.60003662109375" text="ID Visite" />
+            <TableColumn fx:id="delete" prefWidth="125.60003662109375" text="action" />
          </columns>
       </TableView>
       <ImageView fitHeight="116.0" fitWidth="115.0" layoutX="33.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
@@ -42,6 +41,11 @@
       </ImageView>
       <Button fx:id="Retour" layoutX="711.0" layoutY="491.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Retour" textFill="#bc9f1e" />
       <ImageView fitHeight="16.0" fitWidth="20.0" layoutX="744.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="16.0" layoutX="714.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/png-clipart-computer-icons-encapsulated-postscript-arrow-return-icon-angle-text-removebg-preview.png" />
          </image>

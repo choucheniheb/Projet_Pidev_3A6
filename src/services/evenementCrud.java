@@ -34,7 +34,7 @@ public class evenementCrud implements InterfaceEvenement {
     public void ajouter(evenements e){
         
         try {
-            String requete3 = "INSERT INTO evenements(  titre_evenement, type_evenement ,date_evenement, lieux_evenement , prix_evenement ,id_invite, description_evenement , id_utilisateur  ) VALUES (  ? ,? ,? ,?, ?,?,?,?)" ;
+            String requete3 = "INSERT INTO evenements(  titre_evenement, type_evenement ,date_evenement, lieux_evenement , prix_evenement ,id_invite, description_evenement , id_utilisateur ,image  ) VALUES ( ?, ? ,? ,? ,?, ?,?,?,?)" ;
             PreparedStatement pst = cnx2.prepareStatement(requete3);
             pst.setString(1, e.getTitre_evenement());
             pst.setString(2, e.getType_evenement());
@@ -44,6 +44,7 @@ public class evenementCrud implements InterfaceEvenement {
             pst.setInt(6, e.getId_invite());
             pst.setString(7, e.getDescription_evenement());
             pst.setInt(8, e.getId_utilisateur());
+            pst.setString(9, e.getImage());
             
 
 
@@ -117,6 +118,7 @@ public class evenementCrud implements InterfaceEvenement {
                // e.setId_utilisateur(rs.getInt(9));
                Utilisateur user = new Utilisateur();
                 user.setId_utilisateur(rs.getInt(9));
+                e.setImage(rs.getString(10));
                 e.setId_utilisateur(user);
 
 
