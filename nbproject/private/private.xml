@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/AfficherAvisController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/AfficherReclamation.fxml</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/AjouterReclamationController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/StatisticsAdminController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/Notification.fxml</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/test/Main.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/ModifierAvisController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/Time.fxml</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/AffichageRec.css</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/cadre.fxml</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/AfficherReclamationController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/entities/Avis.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/StatisticsAdmin.fxml</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/CadreController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/AfficherAvisClientController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/entities/Reclamations.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/ExcelExporter.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/services/IService.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/time.css</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/TimeController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/test/Test.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/ModifierReclamationController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/services/ServiceAvis.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/entities/Notification.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/NotificationController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/AfficherAvisClient.fxml</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/gui/AjouterAvisController.java</file>
+            <file>file:/C:/Users/amine/OneDrive/Documents/NetBeansProjects/projet1/src/services/ServiceReclamation.java</file>
+        </group>
+    </open-files>
+</project-private>
