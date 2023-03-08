@@ -42,7 +42,7 @@ public class Gestion_EvenementController implements Initializable {
         Ajouter_un_Evenement.setOnAction(Ajouter_un_Evenement -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Ajouter_Evenement.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Ajouter_Evenement.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Ajouter_un_Evenement.getSource()).getScene().getWindow();
@@ -59,7 +59,7 @@ public class Gestion_EvenementController implements Initializable {
         Afficher_les_Evenements.setOnAction(Afficher_les_Evenements -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Afficher_Evenement.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Afficher_Evenement.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Afficher_les_Evenements.getSource()).getScene().getWindow();
@@ -76,7 +76,7 @@ public class Gestion_EvenementController implements Initializable {
         Retour.setOnAction(retour -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Accueil_Circuit_Evenement.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Accueil_Circuit_Evenement.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) retour.getSource()).getScene().getWindow();

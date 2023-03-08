@@ -41,7 +41,7 @@ public class Gestion_InviteController implements Initializable {
         Ajouter_un_invité.setOnAction(Ajouter_un_invité -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Ajouter_Invite.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Ajouter_Invite.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Ajouter_un_invité.getSource()).getScene().getWindow();
@@ -58,7 +58,7 @@ public class Gestion_InviteController implements Initializable {
         Afficher_les_invités.setOnAction(Afficher_les_invités -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Afficher_Invites.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Afficher_Invites.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Afficher_les_invités.getSource()).getScene().getWindow();
@@ -75,7 +75,7 @@ public class Gestion_InviteController implements Initializable {
         Retour.setOnAction(retour -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Accueil_Circuit_Evenement.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Accueil_Circuit_Evenement.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) retour.getSource()).getScene().getWindow();

@@ -75,9 +75,9 @@ public class Afficher_PlanningController implements Initializable {
             planning = ps.afficher();
             ObservableList<planning> olp = FXCollections.observableArrayList(planning);
             planningtv.setItems(olp);
-            idp.setCellValueFactory(new PropertyValueFactory("id_planning  "));
-            idc.setCellValueFactory(new PropertyValueFactory("id_circuit "));
-            ide.setCellValueFactory(new PropertyValueFactory("id_evenement "));
+            idp.setCellValueFactory(new PropertyValueFactory("id_planning"));
+            idc.setCellValueFactory(new PropertyValueFactory("id_circuit"));
+            ide.setCellValueFactory(new PropertyValueFactory("id_evenement"));
             resto.setCellValueFactory(new PropertyValueFactory("resto"));
             hotel.setCellValueFactory(new PropertyValueFactory("hotel"));
             empla.setCellValueFactory(new PropertyValueFactory("emplacement"));

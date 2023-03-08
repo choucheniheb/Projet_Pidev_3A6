@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -20,8 +21,6 @@
       <Label layoutX="82.0" layoutY="358.0" prefHeight="18.0" prefWidth="90.0" text="Hotel :" textFill="#bc9f1e" />
       <Label layoutX="82.0" layoutY="199.0" prefHeight="18.0" prefWidth="89.0" text="Id Circuit :" textFill="#bc9f1e" />
       <Label layoutX="82.0" layoutY="416.0" prefHeight="18.0" prefWidth="90.0" text="Emplacement :" textFill="#bc9f1e" />
-      <TextField fx:id="idcir" layoutX="222.0" layoutY="195.0" promptText="Ecrire id Circuit" style="TEXT: bc9f1e;" />
-      <TextField fx:id="idev" layoutX="222.0" layoutY="254.0" promptText="Ecrire id Evenement" style="TEXT: bc9f1e;" />
       <TextField fx:id="resto" layoutX="222.0" layoutY="300.0" promptText="Ecrire nom Restaurant" style="TEXT: bc9f1e;" />
       <TextField fx:id="hotel" layoutX="222.0" layoutY="354.0" promptText="Ecrire nom Hotel" style="TEXT: bc9f1e;" />
       <TextField fx:id="emplace" layoutX="222.0" layoutY="413.0" promptText="Ecrire votre Emplacement" style="TEXT: bc9f1e;" />
@@ -42,5 +41,7 @@
          </image>
       </ImageView>
       <Button fx:id="Retour" layoutX="75.0" layoutY="491.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="94.0" text="Retour" textFill="#bc9f1e" />
+      <ChoiceBox fx:id="idcir" layoutX="221.0" layoutY="195.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="idev" layoutX="221.0" layoutY="245.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

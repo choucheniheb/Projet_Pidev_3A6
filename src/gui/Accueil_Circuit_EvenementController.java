@@ -34,6 +34,8 @@ public class Accueil_Circuit_EvenementController implements Initializable {
     private Button Gestion_Evenement;
     @FXML
     private Button Gestion_Visite;
+    @FXML
+    private Button Information;
 
     /**
      * Initializes the controller class.
@@ -44,7 +46,7 @@ public class Accueil_Circuit_EvenementController implements Initializable {
         Gestion_Circuit.setOnAction(Gestion_Circuit -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Gestion_Circuit.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Gestion_Circuit.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Gestion_Circuit.getSource()).getScene().getWindow();
@@ -61,7 +63,7 @@ public class Accueil_Circuit_EvenementController implements Initializable {
         Gestion_Invite.setOnAction(Gestion_Invite -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Gestion_Invite.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Gestion_Invite.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Gestion_Invite.getSource()).getScene().getWindow();
@@ -78,7 +80,7 @@ public class Accueil_Circuit_EvenementController implements Initializable {
         Gestion_Planning.setOnAction(Gestion_Planning -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Gestion_planning.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Gestion_planning.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Gestion_Planning.getSource()).getScene().getWindow();
@@ -96,7 +98,7 @@ public class Accueil_Circuit_EvenementController implements Initializable {
         Gestion_Evenement.setOnAction(Gestion_Evenement -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Gestion_Evenement.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Gestion_Evenement.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Gestion_Evenement.getSource()).getScene().getWindow();
@@ -114,10 +116,27 @@ public class Accueil_Circuit_EvenementController implements Initializable {
         Gestion_Visite.setOnAction(Gestion_Visite -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Gestion_Visite.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Gestion_Visite.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Gestion_Visite.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+
+            } catch (IOException ex) {
+                System.out.println(ex.getMessage());
+            }
+
+        });
+        
+        
+                Information.setOnAction(Information -> {
+
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/RandomTunisiaFacts.fxml"));
+                Parent root = loader.load();
+                Scene scene = new Scene(root);
+                Stage stage = (Stage) ((Node) Information.getSource()).getScene().getWindow();
                 stage.setScene(scene);
                 stage.show();
 

@@ -26,6 +26,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import services.evenementCrud;
 import services.inviteCrud;
+import services.planningCrud;
 
 /**
  * FXML Controller class
@@ -50,6 +51,8 @@ public class Modifier_PlanningController implements Initializable {
     private Button Retour;
     @FXML
     private Text idplanning;
+    @FXML
+    private Text id_planning;
 
     /**
      * Initializes the controller class.
@@ -79,14 +82,14 @@ public void setplanning(planning c) {
         Modifier_Planning.setOnAction(event -> {
         
         try {
-            inviteCrud ps = new inviteCrud();
+            planningCrud ps = new planningCrud();
             
-           ps.modifier(titre.getText(), type.getText(), date.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")), lieux.getText(), Double.parseDouble(prix.getText()), Integer.parseInt(invite.getText()), description.getText(), Integer.parseInt(utilisateur.getText()), Integer.parseInt(id_evenement.getText()));
-           ps.modifier(nom_invite, prenom_invite, type_invite, 0);
-           FXMLLoader loader = new FXMLLoader(getClass().getResource("Afficher_Evenement.fxml"));
+           
+           
+         ps.modifier(Integer.parseInt(idcir.getText()), Integer.parseInt(idev.getText()), resto.getText(), hotel.getText(), emplace.getText() , Integer.parseInt(idplanning.getText()));
+          FXMLLoader loader = new FXMLLoader(getClass().getResource("Afficher_Planning.fxml"));
             Parent root = loader.load();
-            
-            Scene scene = modifier.getScene();
+            Scene scene = Modifier_Planning.getScene();
             scene.setRoot(root);
         } catch (IOException ex) {
             Logger.getLogger(ModifierEvenementController.class.getName()).log(Level.SEVERE, null, ex);
@@ -101,7 +104,7 @@ public void setplanning(planning c) {
         Retour.setOnAction(Retour -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Afficher_Circuit.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Afficher_Planning.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Retour.getSource()).getScene().getWindow();

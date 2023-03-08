@@ -44,7 +44,7 @@ public class Gestion_VisiteController implements Initializable {
         Ajouter_une_visite.setOnAction(Ajouter_une_visite -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Ajouter_visite.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Ajouter_visite.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Ajouter_une_visite.getSource()).getScene().getWindow();
@@ -61,7 +61,7 @@ public class Gestion_VisiteController implements Initializable {
         Afficher_les_visites.setOnAction(Afficher_les_visites -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Afficher_Visites.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Afficher_Visites.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Afficher_les_visites.getSource()).getScene().getWindow();
@@ -78,7 +78,7 @@ public class Gestion_VisiteController implements Initializable {
         Retour.setOnAction(retour -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Accueil_Circuit_Evenement.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Accueil_Circuit_Evenement.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) retour.getSource()).getScene().getWindow();

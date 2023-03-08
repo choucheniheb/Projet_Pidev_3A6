@@ -30,6 +30,8 @@ public class Gestion_CircuitController implements Initializable {
     private Button Afficher_les_Circuits;
     @FXML
     private Button retour;
+    @FXML
+    private Button Stat;
 
     /**
      * Initializes the controller class.
@@ -41,7 +43,7 @@ public class Gestion_CircuitController implements Initializable {
         Ajouter_un_Circuit.setOnAction(Ajouter_un_Circuit -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Ajouter_Circuit.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Ajouter_Circuit.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Ajouter_un_Circuit.getSource()).getScene().getWindow();
@@ -58,7 +60,7 @@ public class Gestion_CircuitController implements Initializable {
         Afficher_les_Circuits.setOnAction(Afficher_les_Circuits -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Afficher_Circuit.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Afficher_Circuit.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Afficher_les_Circuits.getSource()).getScene().getWindow();
@@ -72,10 +74,29 @@ public class Gestion_CircuitController implements Initializable {
         });
         
         
+        Stat.setOnAction(retour -> {
+
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/StatisticsCircuit.fxml"));
+                Parent root = loader.load();
+                Scene scene = new Scene(root);
+                Stage stage = (Stage) ((Node) retour.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+
+            } catch (IOException ex) {
+                System.out.println(ex.getMessage());
+            }
+
+        });
+        
+        
+        
+        
         retour.setOnAction(retour -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Accueil_Circuit_Evenement.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Accueil_Circuit_Evenement.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) retour.getSource()).getScene().getWindow();

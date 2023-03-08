@@ -40,7 +40,7 @@ public class Gestion_planningController implements Initializable {
         Ajouter_un_Planning.setOnAction(Ajouter_un_Planning -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Ajouter_Planning.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Ajouter_Planning.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Ajouter_un_Planning.getSource()).getScene().getWindow();
@@ -57,7 +57,7 @@ public class Gestion_planningController implements Initializable {
         Afficher_les_Planning.setOnAction(Afficher_les_Planning -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Afficher_Planning.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Afficher_Planning.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) Afficher_les_Planning.getSource()).getScene().getWindow();
@@ -74,7 +74,7 @@ public class Gestion_planningController implements Initializable {
         Retour.setOnAction(retour -> {
 
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/Accueil_Circuit_Evenement.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/Accueil_Circuit_Evenement.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) retour.getSource()).getScene().getWindow();

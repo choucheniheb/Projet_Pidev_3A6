@@ -66,8 +66,8 @@ public class Afficher_InvitesController implements Initializable {
     List<invites> invites;
             invites = ps.afficher();
             ObservableList<invites> olp = FXCollections.observableArrayList(invites);
-            id.setCellValueFactory(new PropertyValueFactory("id_invite  "));
             invitetv.setItems(olp);
+            id.setCellValueFactory(new PropertyValueFactory("id_invite"));
             nom.setCellValueFactory(new PropertyValueFactory("nom_invite"));
             prenom.setCellValueFactory(new PropertyValueFactory("prenom_invite"));
             type.setCellValueFactory(new PropertyValueFactory("type_invite"));

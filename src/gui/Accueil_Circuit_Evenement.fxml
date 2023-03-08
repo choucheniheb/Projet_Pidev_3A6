@@ -13,11 +13,11 @@
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font></Button>
-      <Button fx:id="Gestion_Invite" alignment="CENTER" contentDisplay="CENTER" layoutX="356.0" layoutY="435.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Invite" textFill="#bc9f1e">
+      <Button fx:id="Gestion_Invite" alignment="CENTER" contentDisplay="CENTER" layoutX="356.0" layoutY="443.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Invite" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font></Button>
-      <Button fx:id="Gestion_Planning" alignment="CENTER" contentDisplay="CENTER" layoutX="502.0" layoutY="329.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Planning" textFill="#bc9f1e">
+      <Button fx:id="Gestion_Planning" alignment="CENTER" contentDisplay="CENTER" layoutX="632.0" layoutY="331.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Planning" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font></Button>
@@ -25,7 +25,7 @@
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font></Button>
-      <Button fx:id="Gestion_Visite" alignment="CENTER" contentDisplay="CENTER" layoutX="213.0" layoutY="325.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Visite" textFill="#bc9f1e">
+      <Button fx:id="Gestion_Visite" alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="326.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Visite" textFill="#bc9f1e">
          <font>
             <Font name="Bell MT Bold" size="13.0" />
          </font></Button>
@@ -53,7 +53,7 @@
             <Image url="@image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="48.0" fitWidth="43.0" layoutX="224.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="48.0" fitWidth="43.0" layoutX="105.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
          </image>
@@ -69,6 +69,21 @@
          </image>
       </ImageView>
       <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="105.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Information" alignment="CENTER" contentDisplay="CENTER" layoutX="361.0" layoutY="331.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Hidden Tunisia Facts" textFill="#bc9f1e">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="48.0" fitWidth="43.0" layoutX="361.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="43.0" layoutX="638.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
          </image>

@@ -100,6 +100,6 @@
             <Image url="@image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
          </image>
       </ImageView>
-      <Text fx:id="id_evenement" fill="WHITE" layoutX="808.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="id_evenement" fill="#bc9f1e" layoutX="808.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
    </children>
 </AnchorPane>

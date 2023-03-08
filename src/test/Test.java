@@ -54,10 +54,15 @@ public class Test extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         // Code pour initialiser votre interface
-
         // Charger le fichier FXML
-      Parent root = FXMLLoader.load(getClass().getResource("/gui/Accueil_Circuit_Evenement.fxml"));
-      //      Parent root = FXMLLoader.load(getClass().getResource("/gui/MenuAppWithChart.fxml"));
+        
+        
+           Parent root = FXMLLoader.load(getClass().getResource("/gui/RandomTunisiaFacts.fxml"));
+  
+
+            
+            
+      
         
 
         // Créer une scène à partir de la racine
