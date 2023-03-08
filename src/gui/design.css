@@ -11,7 +11,7 @@ and open the template in the editor.
     -fx-background-color: #fff;
 }
 .other-form{
-    -fx-background-color: linear-gradient(to bottom right, #FFE66E, #D4AF37);
+    -fx-background-color: linear-gradient(to bottom right, #F2CA53, #D4AF37);
     -fx-text-fill: #000000;
     -fx-font-size: 14px;
 }
@@ -49,4 +49,60 @@ and open the template in the editor.
 }
 .edit-btn:hover{
     -fx-background-color: #D4AF37;
+}
+.choice-box > * {
+    -fx-background-color: #F2CA53;
+}   
+
+
+* {
+	-fx-primary-color: #F2CA53;
+	-fx-secondary-color: #D4AF37;
+	-fx-light-grey-color: #d1d1d1;
+    
+	-fx-focus-color: -fx-secondary-color;
+}
+
+.date-picker .arrow-button {
+	-fx-background-color: -fx-primary-color;
+	-fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+	-fx-background-color: -fx-secondary-color;
+}
+.date-picker .arrow-button .arrow {
+	-fx-background-color: white;
+}
+.date-picker .cell {
+	-fx-background-color: white;
+}
+.date-picker .cell:hover {
+	-fx-background-color: -fx-light-grey-color;
+}
+.date-picker .cell:focused {
+	-fx-background-color: -fx-light-grey-color;
+}
+.date-picker .selected {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: white;
+}
+.date-picker .selected:focused {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: white;
+}
+.date-picker-popup  {
+	-fx-border-color: -fx-primary-color;
+}
+.date-picker-popup .month-year-pane {
+	-fx-background-color: -fx-primary-color;
+}
+.date-picker-popup .month-year-pane .label {
+	-fx-text-fill: white;
+}
+.date-picker-popup .week-number-cell {
+	-fx-text-fill: -fx-secondary-color;
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+	-fx-background-color: white;
 }

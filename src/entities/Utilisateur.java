@@ -12,7 +12,7 @@ package entities;
 public class Utilisateur {
     private int id_utilisateur,id_role;
     private String nom_utilisateur,prenom_utilisateur,mail_utilisateur,numero_telephone,pseudo,mtp;
-    private String date_naissance,nom_Role;
+    private String date_naissance,nom_Role,image_user;
 
     public Utilisateur(int id_utilisateur, int id_role, String nom_utilisateur, String prenom_utilisateur, String mail_utilisateur, String numero_telephone, String pseudo, String mtp, String date_naissance) {
         this.id_utilisateur = id_utilisateur;
@@ -55,6 +55,14 @@ public class Utilisateur {
     
     
     public Utilisateur() {
+    }
+
+    public String getImage_user() {
+        return image_user;
+    }
+
+    public void setImage_user(String image_user) {
+        this.image_user = image_user;
     }
 
     public int getId_utilisateur() {

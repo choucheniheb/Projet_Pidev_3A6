@@ -8,12 +8,16 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -29,24 +33,24 @@
                         <Insets top="50.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imageProfile" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/iheb.png" />
                            </image>
                         </ImageView>
-                        <Label text="iheb chouchen" textFill="WHITE">
+                        <Label fx:id="nomEtPrenom" text="iheb chouchen" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Button fx:id="editProfileProfile" mnemonicParsing="false" prefHeight="30.0" prefWidth="105.0" styleClass="edit-btn" stylesheets="@design.css" text="Edit profile" textFill="WHITE">
+                        <Button fx:id="editProfileProfile" mnemonicParsing="false" onAction="#handle" prefHeight="30.0" prefWidth="105.0" styleClass="edit-btn" stylesheets="@design.css" text="Edit profile" textFill="WHITE">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="TOP_CENTER" prefHeight="245.0" prefWidth="340.0" spacing="15.0">
+                  <VBox alignment="TOP_CENTER" prefHeight="275.0" prefWidth="340.0" spacing="15.0">
                      <children>
                         <HBox fx:id="pofileProfile" alignment="CENTER" prefHeight="45.0" prefWidth="200.0" stylesheets="@design.css">
                            <children>
@@ -99,6 +103,19 @@
                            <children>
                               <FontAwesomeIcon fill="WHITE" iconName="LIST" size="1.6em" />
                               <Label prefHeight="32.0" prefWidth="192.0" text="Users List" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="addRolesProfile" alignment="CENTER" onMouseClicked="#switchForm" prefHeight="45.0" prefWidth="200.0" styleClass="selection">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="PLUS" size="1.6em" />
+                              <Label prefHeight="32.0" prefWidth="192.0" text="Add New Roles" textFill="WHITE">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
@@ -238,12 +255,12 @@
                         <Insets top="50.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imageProfile1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/iheb.png" />
                            </image>
                         </ImageView>
-                        <Label text="iheb chouchen" textFill="WHITE">
+                        <Label fx:id="nomEtPrenom1" text="iheb chouchen" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -255,7 +272,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="TOP_CENTER" prefHeight="245.0" prefWidth="340.0" spacing="15.0">
+                  <VBox alignment="TOP_CENTER" prefHeight="275.0" prefWidth="340.0" spacing="15.0">
                      <children>
                         <HBox fx:id="passwordToFomProfile" alignment="CENTER" onMouseClicked="#switchForm" prefHeight="45.0" prefWidth="200.0" styleClass="selection" stylesheets="@design.css">
                            <children>
@@ -308,6 +325,19 @@
                            <children>
                               <FontAwesomeIcon fill="WHITE" iconName="LIST" size="1.6em" />
                               <Label prefHeight="32.0" prefWidth="192.0" text="Users List" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="addRolesPassword" alignment="CENTER" onMouseClicked="#switchForm" prefHeight="45.0" prefWidth="200.0" styleClass="selection">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="PLUS" size="1.6em" />
+                              <Label prefHeight="32.0" prefWidth="192.0" text="Add New Roles" textFill="WHITE">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
@@ -405,12 +435,12 @@
                         <Insets top="50.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imageProfile2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/iheb.png" />
                            </image>
                         </ImageView>
-                        <Label text="iheb chouchen" textFill="WHITE">
+                        <Label fx:id="nomEtPrenom2" text="iheb chouchen" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -422,7 +452,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="TOP_CENTER" prefHeight="245.0" prefWidth="340.0" spacing="15.0">
+                  <VBox alignment="TOP_CENTER" prefHeight="275.0" prefWidth="340.0" spacing="15.0">
                      <children>
                         <HBox fx:id="profileUserList" alignment="CENTER" onMouseClicked="#switchForm" prefHeight="45.0" prefWidth="200.0" styleClass="selection" stylesheets="@design.css">
                            <children>
@@ -484,6 +514,19 @@
                               <String fx:value="selection-border" />
                            </styleClass>
                         </HBox>
+                        <HBox fx:id="addRolesUserList" alignment="CENTER" onMouseClicked="#switchForm" prefHeight="45.0" prefWidth="200.0" styleClass="selection">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="PLUS" size="1.6em" />
+                              <Label prefHeight="32.0" prefWidth="192.0" text="Add New Roles" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
                      </children>
                   </VBox>
                   <HBox fx:id="disconnectPassword1" alignment="CENTER" onMouseClicked="#disconnect" prefHeight="45.0" prefWidth="200.0" styleClass="selection" stylesheets="@design.css">
@@ -528,6 +571,200 @@
                </children>
                <BorderPane.margin>
                   <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="formAddRoles" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1220.0" styleClass="white-form" stylesheets="@design.css" visible="false">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="340.0" spacing="50.0" styleClass="other-form" stylesheets="@design.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="202.0" prefWidth="340.0" spacing="15.0">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fx:id="imageProfile3" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/iheb.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nomEtPrenom3" text="iheb chouchen" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="editProfileProfile1" mnemonicParsing="false" prefHeight="30.0" prefWidth="105.0" styleClass="edit-btn" stylesheets="@design.css" text="Edit profile" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="275.0" prefWidth="340.0" spacing="15.0">
+                     <children>
+                        <HBox fx:id="pofileAddRoles" alignment="CENTER" onMouseClicked="#switchForm" prefHeight="45.0" prefWidth="200.0" styleClass="selection" stylesheets="@design.css">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="USER" size="1.6em" />
+                              <Label prefHeight="32.0" prefWidth="192.0" text=" Pofile" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="PasswordAddRoles" alignment="CENTER" onMouseClicked="#switchForm" prefHeight="45.0" prefWidth="200.0" styleClass="selection">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="LOCK" size="1.6em" />
+                              <Label prefHeight="32.0" prefWidth="192.0" text=" Password" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="settingsAddRoles" alignment="CENTER" prefHeight="45.0" prefWidth="200.0" styleClass="selection">
+                           <children>
+                              <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/settings.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="192.0" text="Settings" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="userListAddRoles" alignment="CENTER" onMouseClicked="#switchForm" prefHeight="45.0" prefWidth="200.0" styleClass="selection">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="LIST" size="1.6em" />
+                              <Label prefHeight="32.0" prefWidth="192.0" text="Users List" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="addRolesAddRoles" alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="PLUS" size="1.6em" />
+                              <Label prefHeight="32.0" prefWidth="192.0" text="Add New Roles" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="selection" />
+                              <String fx:value="selection-border" />
+                           </styleClass>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox fx:id="disconnectProfile1" alignment="CENTER" onMouseClicked="#disconnect" prefHeight="45.0" prefWidth="200.0" styleClass="selection" stylesheets="@design.css">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="138.0" text="Disconnect" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="50.0" styleClass="white-form" stylesheets="@design.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="882.0" text="Add New Roles" textFill="#5a3375">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="242.0" prefWidth="779.0" spacing="30.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="882.0" text="Roles details" textFill="#5a3375">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="16.0" prefWidth="779.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="130.0" text="Roles Name" textFill="#5a3375">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="200.0" prefWidth="140.0" />
+                              <TextField fx:id="rolesName" prefHeight="32.0" prefWidth="322.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="149.0" prefWidth="779.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="130.0" text="Role Description" textFill="#5a3375">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="200.0" prefWidth="140.0" />
+                              <TextArea fx:id="rolesDescription" prefHeight="84.0" prefWidth="322.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vboxPermission" prefHeight="230.0" prefWidth="779.0" spacing="30.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="882.0" text="Permisson" textFill="#5a3375">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <GridPane fx:id="gridPane" prefHeight="198.0" prefWidth="779.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <Button fx:id="saveRole" mnemonicParsing="false" onAction="#saveRole" prefHeight="50.0" prefWidth="150.0" styleClass="edit-btn" stylesheets="@design.css" text="Save Role" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
                </BorderPane.margin>
             </VBox>
          </center>

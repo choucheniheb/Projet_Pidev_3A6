@@ -38,8 +38,4 @@ public class MyDB {
             instance=new MyDB();
         return instance;
     }
-    
-    
-    
-    
 }

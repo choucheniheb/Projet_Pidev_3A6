@@ -6,15 +6,10 @@
 package test;
 
 
-import entities.Permission;
-import entities.Role;
-import entities.Utilisateur;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import services.PermissionService;
-import services.RoleService;
-import services.UtilisateurService;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.mail.MessagingException;
+import services.PasswordEncryption;
 
 
 /**
@@ -24,15 +19,18 @@ import services.UtilisateurService;
 public class Test {
     
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MessagingException {
        
         try {
-            Utilisateur u = new Utilisateur(2, "iheb", "chouchen", "chouchen.iheb@esprit.tn", "26836763", "ihebch", "iheb@1122", "2000-07-07");
-            UtilisateurService ps = new UtilisateurService();
-            //ps.ajouter(u);
+//            Utilisateur u = new Utilisateur(2, "iheb", "chouchen", "chouchen.iheb@esprit.tn", "26836763", "ihebch", "iheb@1122", "2000-07-07");
+//            UtilisateurService ps = new UtilisateurService();
+            String password = "iheb@1122";
+            System.out.println(PasswordEncryption.encryptPassword(password, "hidden tunisia"));
+            System.out.println(PasswordEncryption.decryptPassword("YhUay1FX52TS7dog2KkeU0sJQtX9CBDI27Fs0vy4RNw=", "hidden tunisia"));
+//            ps.ajouter(u);
             //ps.modifier(u);
             //ps.supprimer(u);
-            System.out.println(ps.recuperer());
+            //System.out.println(ps.recuperer());
             /*Role r= new Role(15,"mod", "moderator");
             RoleService ps=new RoleService();
             List<Permission> p = new ArrayList<>();
@@ -50,8 +48,10 @@ public class Test {
             //ps.modifier(u);
             //ps.supprimer(u);
             //System.out.println(ps.recuperer());
-        } catch (SQLException ex) {
-            System.out.println(ex.getMessage());
+//        } catch (SQLException ex) {
+//            System.out.println(ex.getMessage());
+        } catch (Exception ex) {
+            Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
