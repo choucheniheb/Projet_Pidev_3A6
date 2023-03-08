@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="469.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GestionReservationController">
+   <children>
+      <Pane fx:id="formAjout1" onDragDetected="#switchForm" prefHeight="469.0" prefWidth="712.0" style="-fx-background-color: black; -fx-border-color: #c9aa1f; -fx-border-width: 6px;" visible="false">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutY="-6.0">
+               <image>
+                  <Image url="@images/324352899_1367577970682741_241313171972203892_n.png" />
+               </image>
+            </ImageView>
+            <ChoiceBox fx:id="myChoiceBox" layoutX="75.0" layoutY="188.0" prefHeight="25.0" prefWidth="200.0" />
+            <DatePicker fx:id="date_res_picker" layoutX="81.0" layoutY="268.0" prefHeight="25.0" prefWidth="191.0" />
+            <Label layoutX="79.0" layoutY="165.0" text="Choisir une reservation *" textFill="#c69819" />
+            <Label layoutX="84.0" layoutY="247.0" text="Choisir une date *" textFill="#c69819" />
+            <ImageView fitHeight="396.0" fitWidth="388.0" layoutX="316.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/600430c1d22c731b94cf4e7dae6b398a.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="216.0" layoutY="32.0" text="Ajouter Reservation" textFill="#bc9f1e">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="swRetourGestion" layoutX="566.0" layoutY="403.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: grey;" text="Retour" textFill="WHITE" />
+            <Button fx:id="AjouteReservationBtn" layoutX="440.0" layoutY="403.0" mnemonicParsing="false" onAction="#AjouterReservation" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: grey;" text="Ajouter " textFill="WHITE" />
+            <ChoiceBox fx:id="prix_res" layoutX="78.0" layoutY="340.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="95.0" layoutY="321.0" text="Prix *" textFill="#bc9f1e" />
+         </children>
+      </Pane>
+      <Pane fx:id="formAffichage1" prefHeight="469.0" prefWidth="712.0" style="-fx-background-color: black; -fx-border-color: #c9aa1f; -fx-border-width: 5px;" visible="false">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-9.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/324352899_1367577970682741_241313171972203892_n.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="swRetourGestion2" layoutX="569.0" layoutY="44.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: grey;" text="Retour" textFill="WHITE" />
+            <TableView fx:id="ReservationTV" layoutX="10.0" layoutY="95.0" prefHeight="353.0" prefWidth="693.0">
+               <columns>
+                  <TableColumn fx:id="id_reservation" prefWidth="92.0" text="id_reservation" />
+                  <TableColumn fx:id="titre_evenement" prefWidth="62.0" text="titre_evenement" />
+                  <TableColumn fx:id="Date_reservation" prefWidth="114.0" text="Date_reservation" />
+                  <TableColumn fx:id="prix_reservation" prefWidth="100.0" text="prix_reservation" />
+                  <TableColumn fx:id="id_evenement" prefWidth="74.0" text="id_evenement" />
+                  <TableColumn fx:id="id_utilisateur" prefWidth="84.0" text="id_utilisateur" />
+                  <TableColumn fx:id="id_abonnement" prefWidth="63.0" text="id_abonnement" />
+                  <TableColumn fx:id="delete" prefWidth="43.0" text="action" />
+                  <TableColumn fx:id="qr_code" prefWidth="60.0" text="qr_code" />
+               </columns>
+            </TableView>
+            <Button fx:id="createpdf" layoutX="449.0" layoutY="45.0" mnemonicParsing="false" onAction="#createpdf" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: grey;" text="createpdf" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane fx:id="formGestion1" prefHeight="469.0" prefWidth="712.0" style="-fx-background-color: black; -fx-border-color: #c9aa1f; -fx-border-width: 5px;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/324352899_1367577970682741_241313171972203892_n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="268.0" fitWidth="363.0" layoutX="248.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/foudre-et-eclair-image-animee-0027.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="swajoutreservation" cache="true" layoutX="177.0" layoutY="293.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="34.0" prefWidth="162.0" style="-fx-background-color: grey;" text="Ajouter Reservation" textFill="WHITE" />
+            <Button fx:id="swaffichagereservation" layoutX="392.0" layoutY="293.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: grey;" text="Afficher Reservation" textFill="WHITE" />
+            <Label layoutX="99.0" layoutY="143.0" prefHeight="150.0" prefWidth="515.0" style="-fx-background-color: transparent;" text="               Gestion de Reservation" textFill="#bc9f1e">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="jouez" layoutX="339.0" layoutY="418.0" mnemonicParsing="false" onAction="#jouersw" text="jouez " />
+            <Button fx:id="Quizbtn" layoutX="206.0" layoutY="418.0" mnemonicParsing="false" onAction="#Quizsw" text="Quiz" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
