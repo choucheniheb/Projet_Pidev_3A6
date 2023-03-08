@@ -42,7 +42,7 @@ public class testfx extends Application {
     @Override
     public void start(Stage primaryStage) {
            try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../gui/GestionAbonnement.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../gui/GestionReservation.fxml"));
             Parent root = loader.load();
             Scene sc = new Scene(root);
             primaryStage.setTitle("Abonnement");

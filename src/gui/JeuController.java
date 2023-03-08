@@ -1,5 +1,6 @@
 package gui;
 
+import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -10,6 +11,11 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.ResourceBundle;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 public class JeuController implements Initializable {
 
@@ -46,6 +52,8 @@ public class JeuController implements Initializable {
     private int playerTurn = 0;
 
     ArrayList<Button> buttons;
+    @FXML
+    private Button retour;
 
 
     @Override
@@ -140,4 +148,27 @@ public class JeuController implements Initializable {
             }
         }
     }
+
+   
+
+    @FXML
+    private void retour(ActionEvent event) {
+         retour.setOnAction(retour -> {
+
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/GestionReservation.fxml"));
+                Parent root = loader.load();
+                Scene scene = new Scene(root);
+                Stage stage = (Stage) ((Node) retour.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+
+            } catch (IOException ex) {
+                System.out.println(ex.getMessage());
+            }
+
+        });
+    }
+    
 }
+    

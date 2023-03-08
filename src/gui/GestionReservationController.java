@@ -245,6 +245,7 @@ public class GestionReservationController implements Initializable {
 
     @FXML
     private void switchForm(MouseEvent event) {
+        
     }
 
     private void update() throws SQLException {

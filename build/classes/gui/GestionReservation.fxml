@@ -73,20 +73,15 @@
                   <Image url="@images/324352899_1367577970682741_241313171972203892_n.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="268.0" fitWidth="363.0" layoutX="248.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/foudre-et-eclair-image-animee-0027.gif" />
-               </image>
-            </ImageView>
-            <Button fx:id="swajoutreservation" cache="true" layoutX="177.0" layoutY="293.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="34.0" prefWidth="162.0" style="-fx-background-color: grey;" text="Ajouter Reservation" textFill="WHITE" />
-            <Button fx:id="swaffichagereservation" layoutX="392.0" layoutY="293.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: grey;" text="Afficher Reservation" textFill="WHITE" />
-            <Label layoutX="99.0" layoutY="143.0" prefHeight="150.0" prefWidth="515.0" style="-fx-background-color: transparent;" text="               Gestion de Reservation" textFill="#bc9f1e">
+            <Button fx:id="swajoutreservation" cache="true" layoutX="177.0" layoutY="293.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="34.0" prefWidth="162.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" text="Ajouter Reservation" textFill="#bc9f1e" />
+            <Button fx:id="swaffichagereservation" layoutX="392.0" layoutY="293.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" text="Afficher Reservation" textFill="#bc9f1e" />
+            <Label layoutX="37.0" layoutY="119.0" prefHeight="165.0" prefWidth="590.0" style="-fx-background-color: transparent;" text="               Gestion de Reservation" textFill="#bc9f1e">
                <font>
-                  <Font name="Arial Black" size="24.0" />
+                  <Font name="Arial Black" size="29.0" />
                </font>
             </Label>
-            <Button fx:id="jouez" layoutX="339.0" layoutY="418.0" mnemonicParsing="false" onAction="#jouersw" text="jouez " />
-            <Button fx:id="Quizbtn" layoutX="206.0" layoutY="418.0" mnemonicParsing="false" onAction="#Quizsw" text="Quiz" />
+            <Button fx:id="jouez" layoutX="406.0" layoutY="418.0" mnemonicParsing="false" onAction="#jouersw" text="jouez " />
+            <Button fx:id="Quizbtn" layoutX="305.0" layoutY="418.0" mnemonicParsing="false" onAction="#Quizsw" text="Quiz" />
          </children>
       </Pane>
    </children>

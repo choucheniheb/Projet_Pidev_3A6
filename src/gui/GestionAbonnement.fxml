@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ImageInput?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -43,7 +46,7 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane fx:id="formAjout2" prefHeight="469.0" prefWidth="730.0" style="-fx-background-color: black; -fx-border-color: #c9aa1f; -fx-border-width: 5px;" visible="false">
+      <Pane fx:id="formAjout2" prefHeight="469.0" prefWidth="730.0" style="-fx-background-color: black; -fx-border-color: #c9aa1f; -fx-border-width: 5px;">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -55,9 +58,19 @@
                   <Font name="Franklin Gothic Medium" size="35.0" />
                </font>
             </Label>
-            <DatePicker fx:id="date_debutab_picker" layoutX="55.0" layoutY="194.0" prefHeight="25.0" prefWidth="211.0" />
-            <DatePicker fx:id="date_expab_picker" layoutX="55.0" layoutY="265.0" prefHeight="25.0" prefWidth="211.0" />
-            <ChoiceBox fx:id="myChoiceBox" layoutX="55.0" layoutY="339.0" prefHeight="25.0" prefWidth="211.0" />
+            <DatePicker fx:id="date_debutab_picker" layoutX="55.0" layoutY="194.0" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: black;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Blend>
+                     <topInput>
+                        <ImageInput />
+                     </topInput>
+                  </Blend>
+               </effect></DatePicker>
+            <DatePicker fx:id="date_expab_picker" layoutX="55.0" layoutY="265.0" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: black;" />
+            <ChoiceBox fx:id="myChoiceBox" accessibleText="categorie" layoutX="55.0" layoutY="339.0" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e;" />
             <Label layoutX="55.0" layoutY="168.0" text="Choisir date de debut d'abonnement  *" textFill="#c9aa1f">
                <font>
                   <Font size="11.0" />
@@ -73,16 +86,11 @@
                   <Font size="11.0" />
                </font>
             </Label>
-            <ImageView fitHeight="282.0" fitWidth="289.0" layoutX="381.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/600430c1d22c731b94cf4e7dae6b398a.gif" />
-               </image>
-            </ImageView>
-            <Button fx:id="swRetourGestion3" layoutX="602.0" layoutY="406.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: grey;" text="Retour" textFill="WHITE" />
-            <Button fx:id="AjouteAbonnementBtn" layoutX="503.0" layoutY="406.0" mnemonicParsing="false" onAction="#AjouterAbonnement" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: grey;" text="Ajouter " textFill="WHITE" />
+            <Button fx:id="swRetourGestion3" layoutX="602.0" layoutY="406.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e;" text="Retour" textFill="#bc9f1e" />
+            <Button fx:id="AjouteAbonnementBtn" layoutX="503.0" layoutY="406.0" mnemonicParsing="false" onAction="#AjouterAbonnement" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e;" text="Ajouter " textFill="#bc9f1e" />
          </children>
       </Pane>
-      <Pane fx:id="formAffichage1" prefHeight="469.0" prefWidth="730.0" style="-fx-background-color: black; -fx-border-color: #c9aa1f; -fx-border-width: 5px;">
+      <Pane fx:id="formAffichage1" prefHeight="469.0" prefWidth="730.0" style="-fx-background-color: black; -fx-border-color: #c9aa1f; -fx-border-width: 5px;" visible="false">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-7.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
                <image>
