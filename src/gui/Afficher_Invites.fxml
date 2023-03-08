@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="766.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Afficher_InvitesController">
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="766.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Afficher_InvitesController">
    <children>
       <Label alignment="CENTER" layoutY="26.0" prefHeight="35.0" prefWidth="769.0" text="Nos Invités" textFill="#bc9f1e">
          <font>

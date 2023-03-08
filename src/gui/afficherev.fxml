@@ -5,6 +5,6 @@
 
 <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AfficherevController">
    <content>
-      <HBox fx:id="scrollAfficherAvis" alignment="CENTER_LEFT" prefHeight="234.0" prefWidth="1000.0" spacing="20.0" style="-fx-background-color: black;" />
+      <HBox fx:id="scrollAfficherAvis" alignment="CENTER_LEFT" prefHeight="234.0" prefWidth="1000.0" spacing="20.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5;" />
    </content>
 </ScrollPane>
