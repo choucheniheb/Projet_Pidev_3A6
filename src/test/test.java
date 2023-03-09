@@ -29,13 +29,13 @@ public class test {
     public static void main(String[] args) throws SQLException {
        
        try {
-          Reservation r = new Reservation("2023-03-22", 5.5, 1, 4, 23);
+          Reservation r = new Reservation("2023-03-22", 5.5, 1, 4, 25);
           ReservationService rs = new ReservationService();
         rs.ajouter(r);
-//         SMSSender ss = new SMSSender();
-//        ss.SMSSENDER(4);
+         //SMSSender ss = new SMSSender();
+       //ss.SMSSENDER(4);
 //////           ps.modifier(r);
-//////            //ps.supprimer(r);
+rs.supprimer(r);
         System.out.println(rs.recuperer());
 ////            Abonnement a = new Abonnement("2023-03-20", "2024-03-20", "silver",4);
 ////            AbonnementService ps = new AbonnementService();

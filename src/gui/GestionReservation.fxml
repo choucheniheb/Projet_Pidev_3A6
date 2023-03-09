@@ -22,24 +22,19 @@
                   <Image url="@images/324352899_1367577970682741_241313171972203892_n.png" />
                </image>
             </ImageView>
-            <ChoiceBox fx:id="myChoiceBox" layoutX="75.0" layoutY="188.0" prefHeight="25.0" prefWidth="200.0" />
-            <DatePicker fx:id="date_res_picker" layoutX="81.0" layoutY="268.0" prefHeight="25.0" prefWidth="191.0" />
-            <Label layoutX="79.0" layoutY="165.0" text="Choisir une reservation *" textFill="#c69819" />
-            <Label layoutX="84.0" layoutY="247.0" text="Choisir une date *" textFill="#c69819" />
-            <ImageView fitHeight="396.0" fitWidth="388.0" layoutX="316.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/600430c1d22c731b94cf4e7dae6b398a.gif" />
-               </image>
-            </ImageView>
+            <ChoiceBox fx:id="myChoiceBox" layoutX="123.0" layoutY="179.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" />
+            <DatePicker fx:id="date_res_picker" layoutX="125.0" layoutY="247.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: black;" />
+            <Label layoutX="123.0" layoutY="150.0" text="Choisir une reservation *" textFill="#c69819" />
+            <Label layoutX="123.0" layoutY="226.0" text="Choisir une date *" textFill="#c69819" />
             <Label layoutX="216.0" layoutY="32.0" text="Ajouter Reservation" textFill="#bc9f1e">
                <font>
                   <Font name="System Bold" size="35.0" />
                </font>
             </Label>
-            <Button fx:id="swRetourGestion" layoutX="566.0" layoutY="403.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: grey;" text="Retour" textFill="WHITE" />
-            <Button fx:id="AjouteReservationBtn" layoutX="440.0" layoutY="403.0" mnemonicParsing="false" onAction="#AjouterReservation" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: grey;" text="Ajouter " textFill="WHITE" />
-            <ChoiceBox fx:id="prix_res" layoutX="78.0" layoutY="340.0" prefHeight="25.0" prefWidth="200.0" />
-            <Label layoutX="95.0" layoutY="321.0" text="Prix *" textFill="#bc9f1e" />
+            <Button fx:id="swRetourGestion" layoutX="566.0" layoutY="403.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" text="Retour" textFill="#bc9f1e" />
+            <Button fx:id="AjouteReservationBtn" layoutX="440.0" layoutY="403.0" mnemonicParsing="false" onAction="#AjouterReservation" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" text="Ajouter " textFill="#bc9f1e" />
+            <ChoiceBox fx:id="prix_res" layoutX="125.0" layoutY="319.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" />
+            <Label layoutX="128.0" layoutY="299.0" text="Prix *" textFill="#bc9f1e" />
          </children>
       </Pane>
       <Pane fx:id="formAffichage1" prefHeight="469.0" prefWidth="712.0" style="-fx-background-color: black; -fx-border-color: #c9aa1f; -fx-border-width: 5px;" visible="false">
@@ -49,8 +44,8 @@
                   <Image url="@images/324352899_1367577970682741_241313171972203892_n.png" />
                </image>
             </ImageView>
-            <Button fx:id="swRetourGestion2" layoutX="569.0" layoutY="44.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: grey;" text="Retour" textFill="WHITE" />
-            <TableView fx:id="ReservationTV" layoutX="10.0" layoutY="95.0" prefHeight="353.0" prefWidth="693.0">
+            <Button fx:id="swRetourGestion2" layoutX="569.0" layoutY="44.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" text="Retour" textFill="#bc9f1e" />
+            <TableView fx:id="ReservationTV" layoutX="10.0" layoutY="106.0" prefHeight="353.0" prefWidth="693.0">
                <columns>
                   <TableColumn fx:id="id_reservation" prefWidth="92.0" text="id_reservation" />
                   <TableColumn fx:id="titre_evenement" prefWidth="62.0" text="titre_evenement" />
@@ -63,7 +58,7 @@
                   <TableColumn fx:id="qr_code" prefWidth="60.0" text="qr_code" />
                </columns>
             </TableView>
-            <Button fx:id="createpdf" layoutX="449.0" layoutY="45.0" mnemonicParsing="false" onAction="#createpdf" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: grey;" text="createpdf" textFill="WHITE" />
+            <Button fx:id="createpdf" layoutX="449.0" layoutY="45.0" mnemonicParsing="false" onAction="#createpdf" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" text="createpdf" textFill="#bc9f1e" />
          </children>
       </Pane>
       <Pane fx:id="formGestion1" prefHeight="469.0" prefWidth="712.0" style="-fx-background-color: black; -fx-border-color: #c9aa1f; -fx-border-width: 5px;">
@@ -80,8 +75,10 @@
                   <Font name="Arial Black" size="29.0" />
                </font>
             </Label>
-            <Button fx:id="jouez" layoutX="406.0" layoutY="418.0" mnemonicParsing="false" onAction="#jouersw" text="jouez " />
-            <Button fx:id="Quizbtn" layoutX="305.0" layoutY="418.0" mnemonicParsing="false" onAction="#Quizsw" text="Quiz" />
+            <Button fx:id="jouez" layoutX="406.0" layoutY="418.0" mnemonicParsing="false" onAction="#jouersw" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" text="jeu" textFill="#bc9f1e" />
+            <Button fx:id="Quizbtn" layoutX="305.0" layoutY="418.0" mnemonicParsing="false" onAction="#Quizsw" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" text="Quiz culturel" textFill="#bc9f1e" />
+            <Button fx:id="Quizbtn" layoutX="117.0" layoutY="418.0" mnemonicParsing="false" onAction="#Quizsw2" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" text="Quiz Gepgraphique" textFill="#bc9f1e" />
+            <Button fx:id="Quizbtn" layoutX="537.0" layoutY="420.0" mnemonicParsing="false" onAction="#Quizsw3" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 2;" text="Quiz Gastronomie" textFill="#bc9f1e" />
          </children>
       </Pane>
    </children>

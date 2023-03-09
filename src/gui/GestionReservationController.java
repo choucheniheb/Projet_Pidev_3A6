@@ -232,11 +232,11 @@ public class GestionReservationController implements Initializable {
     @FXML
     private void AjouterReservation(ActionEvent event) {
         try {
-            Reservation r = new Reservation(date_res_picker.getValue().toString(), Double.parseDouble(prix_res.getValue()), 1, 4, 19);
+            Reservation r = new Reservation(date_res_picker.getValue().toString(), Double.parseDouble(prix_res.getValue()), 1, 4, 25);
             ps1.ajouter(r);
             System.out.println(ps1.recuperer());
-            SMSSender ss = new SMSSender();
-            ss.SMSSENDER(4);
+            //SMSSender ss = new SMSSender();
+            //ss.SMSSENDER(4);
             update();
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
@@ -335,15 +335,15 @@ public class GestionReservationController implements Initializable {
        PdfWriter.getInstance(doc,new FileOutputStream("C:\\Users\\wajdi\\Documents\\NetBeansProjects\\projet_pidev_3a6\\src\\gui\\images\\pdf.pdf"));
        doc.open();
        
-//       Image img = Image.getInstance("C:\\Users\\msi\\Desktop\\projet yocef\\reclamation\\src\\com\\img\\Exchange.png12.png");
-//       img.scaleAbsoluteHeight(60);
-//       img.scaleAbsoluteWidth(100);
-//       img.setAlignment(Image.ALIGN_RIGHT);
-//       doc.add(img);
+      Image img = Image.getInstance("C:\\Users\\wajdi\\Documents\\NetBeansProjects\\projet_pidev_3a6\\src\\gui\\images\\324352899_1367577970682741_241313171972203892_n.png");
+      img.scaleAbsoluteHeight(200);
+       img.scaleAbsoluteWidth(200);
+     img.setAlignment(Image.ALIGN_CENTER);
+      doc.add(img);
        
        doc.add(new Paragraph(" "));
-       Font font = new Font(FontFamily.TIMES_ROMAN, 28, Font.UNDERLINE, BaseColor.BLACK);
-       Paragraph p = new Paragraph("Liste des reservations", font);
+       Font font = new Font(FontFamily.HELVETICA, 32, Font.NORMAL, BaseColor.YELLOW);
+       Paragraph p = new Paragraph("Liste des Reservations", font);
        p.setAlignment(Element.ALIGN_CENTER);
        doc.add(p);
        doc.add(new Paragraph(" "));
@@ -354,19 +354,19 @@ public class GestionReservationController implements Initializable {
        
        PdfPCell cell;
           
-       cell = new PdfPCell(new Phrase("date_res", FontFactory.getFont("Times New Roman", 11)));
+       cell = new PdfPCell(new Phrase("Date de Reservation", FontFactory.getFont("Times New Roman", 11)));
        cell.setHorizontalAlignment(Element.ALIGN_CENTER);
        cell.setBackgroundColor(BaseColor.WHITE);
        tabpdf.addCell(cell);
        
-       cell = new PdfPCell(new Phrase("prix_res", FontFactory.getFont("Times New Roman", 11)));
+       cell = new PdfPCell(new Phrase("Prix de Reservation", FontFactory.getFont("Times New Roman", 11)));
        cell.setHorizontalAlignment(Element.ALIGN_CENTER);
        cell.setBackgroundColor(BaseColor.WHITE);
        tabpdf.addCell(cell);
        
    
        
-       Connection con1 = MyDB.getInstance().getCnx();;
+       Connection con1 = MyDB.getInstance().getCnx();
        String req = "SELECT date_res,prix_res from reservations";
         Statement st = con1.createStatement();
         ResultSet rs1 =  st.executeQuery(req);
@@ -397,11 +397,9 @@ public class GestionReservationController implements Initializable {
        Notifications notificationBuilder = Notifications.create()
             .title("Succes").text("Your document has been saved as PDF !!").graphic(null).hideAfter(javafx.util.Duration.seconds(5))
                .position(Pos.CENTER_LEFT)
-               .onAction(new EventHandler<ActionEvent>(){
-                   public void handle(ActionEvent event)
-                   {
-                       System.out.println("clicked ON ");
-               }});
+               .onAction((ActionEvent event1) -> {
+                   System.out.println("clicked ON ");
+       });
        notificationBuilder.darkStyle();
        notificationBuilder.show();
         } catch (DocumentException | HeadlessException | IOException e) {
@@ -434,7 +432,37 @@ public class GestionReservationController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("quiz_animaux.fxml"));
             Parent root = loader.load();
             Scene sc = new Scene(root);
-            primaryStage.setTitle("Abonnement");
+            primaryStage.setTitle("Quiz");
+            primaryStage.setScene(sc);
+            primaryStage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    @FXML
+    private void Quizsw2(ActionEvent event) {
+         try {
+             Stage primaryStage=new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("quiz2.fxml"));
+            Parent root = loader.load();
+            Scene sc = new Scene(root);
+            primaryStage.setTitle("Quiz");
+            primaryStage.setScene(sc);
+            primaryStage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    @FXML
+    private void Quizsw3(ActionEvent event) {
+         try {
+             Stage primaryStage=new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("quiz3.fxml"));
+            Parent root = loader.load();
+            Scene sc = new Scene(root);
+            primaryStage.setTitle("Quiz");
             primaryStage.setScene(sc);
             primaryStage.show();
         } catch (IOException ex) {
