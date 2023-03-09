@@ -10,7 +10,7 @@ and open the template in the editor.
 
 /* Appliquer un style à l'élément racine de la scène */
 .root {
-    -fx-background-color: #bc9f1e; /* Couleur de fond */
+    -fx-background-color: #808080; /* Couleur de fond */
 }
 
 /* Appliquer un style à l'étiquette d'horloge */
@@ -23,7 +23,7 @@ and open the template in the editor.
 /* Appliquer un style au bouton de changement de fuseau horaire */
 #timezoneButton {
     -fx-font-size: 16px; /* Taille de police */
-    -fx-background-color: #bc9f1es; /* Couleur de fond */
+    -fx-background-color: #808080; /* Couleur de fond */
     -fx-text-fill: #FFFFFF; /* Couleur de texte */
     -fx-padding: 10px 20px; /* Espacement interne */
     -fx-border-radius: 5px; /* Rayon de bordure */

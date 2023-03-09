@@ -16,7 +16,7 @@
             <Image url="@images/ELJEM.jpg" />
          </image>
       </ImageView>
-      <TableView fx:id="ReclamationsTv" layoutX="7.0" layoutY="268.0" prefHeight="200.0" prefWidth="1166.0" stylesheets="@AffichageRec.css">
+      <TableView fx:id="ReclamationsTv" layoutX="7.0" layoutY="268.0" prefHeight="240.0" prefWidth="1166.0" stylesheets="@AffichageRec.css">
          <columns>
             <TableColumn fx:id="id_reclamationTv" prefWidth="114.0" text="id_reclamation" />
             <TableColumn fx:id="id_utilisateurTv" prefWidth="111.0" text="id utilisateur" />
@@ -30,7 +30,7 @@
             <TableColumn fx:id="modifier" prefWidth="75.0" text="action1" />
          </columns>
       </TableView>
-      <Label graphicTextGap="20.0" layoutX="400.0" layoutY="44.0" prefHeight="79.0" prefWidth="380.0" stylesheets="@AffichageRec.css" text="Affichage des Reclamations" textFill="#f5efef">
+      <Label graphicTextGap="20.0" layoutX="400.0" layoutY="44.0" prefHeight="79.0" prefWidth="380.0" stylesheets="@AffichageRec.css" text="Affichage des Reclamations" textFill="#bc9f1e">
          <font>
             <Font size="30.0" />
          </font>
@@ -40,6 +40,6 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="exportExcelBtn" layoutX="1033.0" layoutY="545.0" mnemonicParsing="false" onMouseClicked="#handleImageViewClick" text="exportExcelBtn" />
+      <Button fx:id="exportExcelBtn" layoutX="1033.0" layoutY="545.0" mnemonicParsing="false" onMouseClicked="#handleImageViewClick" style="-fx-background-color: bc9f1e;" text="exportExcelBtn" />
    </children>
 </AnchorPane>

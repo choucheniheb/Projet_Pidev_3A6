@@ -47,7 +47,7 @@ public class CadreController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
-    private final String[] colors = {"#B9E5FF", "#BDB2FE", "#FB9AA8", "#FF5056"};
+    private final String[] colors = {"#bc9f1e", "#BDB2FE", "#bc9f1e", "#FF5056"};
 
     public void setData(Avis a) throws SQLException {
         Connection cnx = MyDB.getInstance().getCnx();

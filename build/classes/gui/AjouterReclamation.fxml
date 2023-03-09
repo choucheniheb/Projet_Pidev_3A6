@@ -10,17 +10,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjouterReclamationController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjouterReclamationController">
    <children>
-      <ImageView fitHeight="413.0" fitWidth="617.0" layoutX="-6.0">
-         <image>
-            <Image url="@images/ELJEM.jpg" />
-         </image>
-      </ImageView>
       <TextArea fx:id="text_reclamationTa" layoutX="68.0" layoutY="159.0" prefHeight="151.0" prefWidth="228.0" promptText="texte reclamation" />
-      <Button fx:id="AjouterReclamationBtn" layoutX="336.0" layoutY="361.0" mnemonicParsing="false" onAction="#AjouterReclamtion" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: black;" text="Ajouter" textFill="#c9c7c7" underline="true" />
-      <Button layoutX="463.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: black;" text="Afficher" textFill="#e1d5d5" textOverrun="WORD_ELLIPSIS" underline="true" />
-      <Label layoutX="194.0" layoutY="20.0" prefHeight="39.0" prefWidth="254.0" text="Ajouter Reclamation" textFill="#fcf3f3">
+      <Button fx:id="AjouterReclamationBtn" layoutX="366.0" layoutY="349.0" mnemonicParsing="false" onAction="#AjouterReclamtion" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: bc9f1e;" text="Ajouter" textFill="#434343" underline="true" />
+      <Button layoutX="469.0" layoutY="349.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: bc9f1e;" text="Afficher" textFill="#2f2f2f" textOverrun="WORD_ELLIPSIS" underline="true" />
+      <Label layoutX="194.0" layoutY="20.0" prefHeight="39.0" prefWidth="254.0" text="Ajouter Reclamation" textFill="#bc9f1e">
          <font>
             <Font size="24.0" />
          </font>
@@ -29,5 +24,10 @@
          </padding>
       </Label>
       <TextField fx:id="type_reclamationTf" layoutX="68.0" layoutY="112.0" prefHeight="25.0" prefWidth="228.0" promptText="type_reclamation" />
+      <ImageView fitHeight="117.0" fitWidth="207.0" layoutX="345.0" layoutY="142.0">
+         <image>
+            <Image url="@images/cropped-ma-reclamation-logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

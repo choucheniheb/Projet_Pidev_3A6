@@ -19,6 +19,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -67,6 +68,7 @@ public class AfficherReclamationController implements Initializable {
     @FXML
         private TableColumn<Reclamations, Button> modifier;
     
+    
    
     @FXML
          private Label welcomeLb;
@@ -77,8 +79,15 @@ public class AfficherReclamationController implements Initializable {
     private TableColumn<Reclamations, Button> delete;
     @FXML
     private Button exportExcelBtn;
+    @FXML
+    private Button btnDisplayStats;
+  
+    
      @FXML
-     private void handleImageViewClick(MouseEvent event) {
+     
+     
+     private void handleImageViewClick(MouseEvent event)
+     {
        
          try {
             FileChooser fileChooser = new FileChooser();
@@ -229,6 +238,6 @@ public void setData(String Message) {
     }
 
 
-  
+   
     }
 
