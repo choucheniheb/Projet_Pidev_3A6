@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane prefHeight="518.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DetailControlleur">
+   <buttonTypes>
+      <ButtonType fx:constant="OK" />
+   </buttonTypes>
+   <content>
+      <AnchorPane prefHeight="534.0" prefWidth="447.0">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="144.0" layoutX="144.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/gif%20icon.gif" />
+               </image>
+            </ImageView>
+            <Text layoutX="130.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nourriture" wrappingWidth="201.060546875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Label layoutX="20.0" layoutY="178.0" prefHeight="27.0" prefWidth="101.0" text="Nom nourriture" textFill="#26bfbc">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="20.0" layoutY="205.0" prefHeight="27.0" prefWidth="139.0" text="Name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="178.0" prefHeight="27.0" prefWidth="139.0" text="Origine Nourriture" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="origine" layoutX="231.0" layoutY="205.0" prefHeight="27.0" prefWidth="165.0" text="origine">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="244.0" prefHeight="27.0" prefWidth="101.0" text="Ingrediants" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="ingrediants" layoutX="20.0" layoutY="271.0" prefHeight="27.0" prefWidth="139.0" text="ingrediants">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="244.0" prefHeight="27.0" prefWidth="84.0" text="Prix " textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="prix" layoutX="231.0" layoutY="271.0" prefHeight="27.0" prefWidth="139.0" text="prix">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="304.0" prefHeight="27.0" prefWidth="84.0" text="Type " textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="type" layoutX="20.0" layoutY="331.0" prefHeight="27.0" prefWidth="139.0" text="type">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="221.0" layoutY="304.0" prefHeight="27.0" prefWidth="94.0" text="Description" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="description" layoutX="222.0" layoutY="331.0" prefHeight="118.0" prefWidth="220.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</DialogPane>

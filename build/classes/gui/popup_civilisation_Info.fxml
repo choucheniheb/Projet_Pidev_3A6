@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane prefHeight="492.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DetailControlleur1">
+   <buttonTypes>
+      <ButtonType fx:constant="OK" />
+   </buttonTypes>
+   <content>
+      <AnchorPane prefHeight="534.0" prefWidth="447.0">
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="237.0" layoutX="113.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/civilisation.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="113.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Civilisation" wrappingWidth="201.060546875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Label layoutX="20.0" layoutY="178.0" prefHeight="27.0" prefWidth="101.0" text="Nom Civilisation" textFill="#26bfbc">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="20.0" layoutY="205.0" prefHeight="27.0" prefWidth="139.0" text="Name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="178.0" prefHeight="27.0" prefWidth="139.0" text="Nom Monument" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="monu" layoutX="231.0" layoutY="205.0" prefHeight="27.0" prefWidth="165.0" text="monu">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="244.0" prefHeight="27.0" prefWidth="101.0" text="Date debut" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="datedebut" layoutX="20.0" layoutY="271.0" prefHeight="27.0" prefWidth="139.0" text="datedebut">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="244.0" prefHeight="27.0" prefWidth="84.0" text="Date fin" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="datefin" layoutX="231.0" layoutY="271.0" prefHeight="27.0" prefWidth="139.0" text="datefin">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="318.0" prefHeight="27.0" prefWidth="94.0" text="Description" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="description" layoutX="24.0" layoutY="345.0" prefHeight="118.0" prefWidth="220.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</DialogPane>

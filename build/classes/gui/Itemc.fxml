@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="96.0" prefWidth="865.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.elementController1">
+   <children>
+      <Label fx:id="name" layoutX="52.0" layoutY="38.0" prefHeight="21.0" prefWidth="145.0" text="Nom Civilisation" />
+      <Label fx:id="note" layoutX="240.0" layoutY="35.0" prefHeight="28.0" prefWidth="129.0" text="Nom Monument" />
+      <ImageView accessibleHelp="details" fitHeight="52.0" fitWidth="57.0" layoutX="693.0" layoutY="23.0" onMouseClicked="#onClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/business-card.png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleHelp="refuser" fitHeight="61.0" fitWidth="42.0" layoutX="754.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/close-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleHelp="accepter" fitHeight="48.0" fitWidth="41.0" layoutX="803.0" layoutY="28.0" onMouseClicked="#AddRdv" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/done.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="389.0" layoutY="40.0" prefHeight="28.0" prefWidth="129.0" />
+      <Button fx:id="btnmodif" layoutX="473.0" layoutY="34.0" mnemonicParsing="false" onAction="#modify" prefHeight="31.0" prefWidth="91.0" text="Modifier" />
+      <Button fx:id="btnsupprimer" layoutX="579.0" layoutY="33.0" mnemonicParsing="false" onAction="#supprimercivilisation" prefHeight="31.0" prefWidth="91.0" text="Supprimer" />
+   </children>
+</Pane>

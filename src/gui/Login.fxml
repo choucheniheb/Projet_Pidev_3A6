@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+   <children>
+      <BorderPane fx:id="Signin_form" prefHeight="512.0" prefWidth="726.0">
+         <left>
+            <AnchorPane prefHeight="526.0" prefWidth="370.0" styleClass="other-form" stylesheets="@design.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="5.0" layoutY="163.0" prefHeight="46.0" prefWidth="365.0" text="Welcom to hidden tunisia">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="si_createAcountBtn" layoutX="36.0" layoutY="484.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="30.0" prefWidth="290.0" styleClass="create-btn" stylesheets="@design.css" text="Create Acount" />
+                  <Label layoutX="129.0" layoutY="451.0" text="Register Account" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="526.0" prefWidth="370.0" styleClass="white-form" stylesheets="@design.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="si_loginBtn" layoutX="99.0" layoutY="350.0" mnemonicParsing="false" onAction="#loginAccount" prefHeight="44.0" prefWidth="186.0" styleClass="create-btn" stylesheets="@design.css" text="Sign In" />
+                  <Label layoutX="145.0" layoutY="98.0" text="Sign In" textFill="#f2ca53">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon fill="#f2ca53" iconName="USER" layoutX="158.0" layoutY="89.0" size="5em" />
+                  <FontAwesomeIcon iconName="USER" layoutX="53.0" layoutY="242.0" size="2em" />
+                  <TextField fx:id="si_username" layoutX="87.0" layoutY="216.0" onAction="#loginAccount" prefHeight="35.0" prefWidth="223.0" promptText="username/email" />
+                  <FontAwesomeIcon iconName="LOCK" layoutX="55.0" layoutY="292.0" size="2em" />
+                  <PasswordField fx:id="si_password" layoutX="87.0" layoutY="265.0" onAction="#loginAccount" prefHeight="35.0" prefWidth="223.0" promptText="password" />
+                  <Hyperlink fx:id="forgotPasswordBtn" layoutX="133.0" layoutY="492.0" onAction="#forgotPassword" text="Forgot password?" underline="true" />
+                  <CheckBox fx:id="rememberPasswordCb" layoutX="87.0" layoutY="315.0" mnemonicParsing="false" text="Stay Online" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="signup_form" layoutX="10.0" layoutY="10.0" prefHeight="512.0" prefWidth="726.0" visible="false">
+         <left>
+            <AnchorPane prefHeight="526.0" prefWidth="370.0" styleClass="other-form" stylesheets="@design.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="3.0" layoutY="161.0" text="Welcom to hidden tunisia">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="su_loginAccountBtn" layoutX="36.0" layoutY="484.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="30.0" prefWidth="290.0" styleClass="create-btn" stylesheets="@design.css" text="Login Account" />
+                  <Label layoutX="104.0" layoutY="449.0" text="Already Have an Account" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="526.0" prefWidth="370.0" styleClass="white-form" stylesheets="@design.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="139.0" layoutY="64.0" text="Sign Up" textFill="#f2ca53">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon fill="#f2ca53" iconName="USER_PLUS" layoutX="150.0" layoutY="63.0" size="5em" wrappingWidth="62.97138977050781" />
+                  <TextField fx:id="su_firstName" layoutX="56.0" layoutY="98.0" prefHeight="35.0" prefWidth="250.0" promptText="first name" />
+                  <TextField fx:id="su_lastName" layoutX="56.0" layoutY="142.0" prefHeight="35.0" prefWidth="250.0" promptText="last name" />
+                  <Button fx:id="su_signup_btn" layoutX="88.0" layoutY="466.0" mnemonicParsing="false" onAction="#registerAccount" prefHeight="44.0" prefWidth="186.0" styleClass="create-btn" stylesheets="@design.css" text="Sign Up" />
+                  <TextField fx:id="su_email" layoutX="56.0" layoutY="187.0" prefHeight="35.0" prefWidth="250.0" promptText="email" />
+                  <TextField fx:id="su_phone" layoutX="56.0" layoutY="231.0" prefHeight="35.0" prefWidth="250.0" promptText="phonne number" />
+                  <TextField fx:id="su_pseudo" layoutX="56.0" layoutY="323.0" prefHeight="35.0" prefWidth="250.0" promptText="pseudo" />
+                  <DatePicker fx:id="su_birthday" layoutX="55.0" layoutY="414.0" prefHeight="35.0" prefWidth="252.0" promptText="birthday" styleClass="date-picker-popup" />
+                  <ChoiceBox fx:id="su_role" accessibleRoleDescription="role" layoutX="55.0" layoutY="368.0" prefHeight="35.0" prefWidth="251.0" />
+                  <Label layoutX="21.0" layoutY="377.0" text="Role:" textFill="#bfbcb5" />
+                  <PasswordField fx:id="su_password" layoutX="56.0" layoutY="275.0" prefHeight="35.0" prefWidth="250.0" promptText="Password" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

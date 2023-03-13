@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CadreController">
+   <children>
+      <VBox fx:id="box_avis" alignment="CENTER" prefHeight="600.0" prefWidth="1000.0" spacing="10.0">
+         <children>
+            <ImageView fx:id="image_user" fitHeight="70.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/civi.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="nom_utilisateur" alignment="CENTER" prefHeight="34.0" prefWidth="211.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+           
+             <Label fx:id="text_avis" contentDisplay="CENTER" prefHeight="199.0" prefWidth="250.0" textAlignment="CENTER" />
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="250.0" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

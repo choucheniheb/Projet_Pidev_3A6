@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Accueil_Circuit_EvenementController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="200.0" spacing="40.0" styleClass="white-background" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/333199419_200992245868457_2286414934692578680_n.png" />
+               </image>
+            </ImageView>
+            <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="44.0" prefWidth="6.0" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="288.0" styleClass="round-layout" stylesheets="@styles.css">
+               <children>
+                  <TextField prefHeight="31.0" prefWidth="232.0" promptText="search" styleClass="transparent" stylesheets="@styles.css" />
+                  <ImageView fitHeight="20.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/CHERCHER.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Pane prefHeight="67.0" prefWidth="507.0" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefHeight="67.0" prefWidth="189.0">
+               <children>
+                  <Label fx:id="labelNameUser" prefHeight="50.0" prefWidth="141.0" text="iheb chouchen">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="img_User" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#swProfileUser" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/334246895_1138793736798042_5697116455433317824_n.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="250.0" spacing="6.0" styleClass="white-background" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="284.0" prefWidth="250.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="141.0" text="Barre des tâches">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Home">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Excursion">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="mouse-moved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Abonnement">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Circuit">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="229.0" prefWidth="250.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="141.0" text="Divertissement">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Jeux">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Culture">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Questionnaire">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="293.0" prefWidth="250.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="141.0" text="Espace Admin">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Brows">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Brows">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Brows">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Brows">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="827.0" prefWidth="1066.0" style="-fx-background-color: black; -fx-border-color: bc9f1e; -fx-border-width: 5px; -fx-background-image: bc9f1e; -fx-border-image-width: 3;">
+               <children>
+                  <Button fx:id="Gestion_Circuit" alignment="CENTER" contentDisplay="CENTER" layoutX="161.0" layoutY="567.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="213.0" text="Gestion Circuit" textFill="#bc9f1e">
+                     <font>
+                        <Font name="Bell MT Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Gestion_Invite" alignment="CENTER" contentDisplay="CENTER" layoutX="426.0" layoutY="567.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Invite" textFill="#bc9f1e">
+                     <font>
+                        <Font name="Bell MT Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Gestion_Planning" alignment="CENTER" contentDisplay="CENTER" layoutX="702.0" layoutY="455.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Planning" textFill="#bc9f1e">
+                     <font>
+                        <Font name="Bell MT Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Gestion_Evenement" alignment="CENTER" contentDisplay="CENTER" layoutX="702.0" layoutY="567.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Gestion Evenement" textFill="#bc9f1e">
+                     <font>
+                        <Font name="Bell MT Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Gestion_Visite" alignment="CENTER" contentDisplay="CENTER" layoutX="160.0" layoutY="450.0" mnemonicParsing="false" onAction="#swAcVis" prefHeight="70.0" prefWidth="214.0" text="Gestion Visite" textFill="#bc9f1e">
+                     <font>
+                        <Font name="Bell MT Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="191.0" prefHeight="40.0" prefWidth="910.0" text="Bienvenu a Hidden Tunisia" textFill="#bc9f1e">
+                     <font>
+                        <Font name="Bell MT" size="52.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="246.0" fitWidth="252.0" layoutX="432.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Projet_Pidev_3A6-omar_circuit/src/gui/image/324352899_1367577970682741_241313171972203892_n.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="125.0" fitWidth="224.0" layoutX="175.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Projet_Pidev_3A6-omar_circuit/src/gui/image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="125.0" fitWidth="281.0" layoutX="702.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Projet_Pidev_3A6-omar_circuit/src/gui/image/vecteezy_gold-gliter-brush-texture_10335683_749.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="582.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Projet_Pidev_3A6-omar_circuit/src/gui/image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="43.0" layoutX="175.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Projet_Pidev_3A6-omar_circuit/src/gui/image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="708.0" layoutY="592.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Projet_Pidev_3A6-omar_circuit/src/gui/image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="440.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Projet_Pidev_3A6-omar_circuit/src/gui/image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="175.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Projet_Pidev_3A6-omar_circuit/src/gui/image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Information" alignment="CENTER" contentDisplay="CENTER" layoutX="431.0" layoutY="455.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="214.0" text="Hidden Tunisia Facts" textFill="#bc9f1e">
+                     <font>
+                        <Font name="Bell MT Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="48.0" fitWidth="43.0" layoutX="431.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Projet_Pidev_3A6-omar_circuit/src/gui/image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="43.0" layoutX="708.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Projet_Pidev_3A6-omar_circuit/src/gui/image/png-clipart-computer-icons-fog-mist-symbol-weather-mist-angle-cloud-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

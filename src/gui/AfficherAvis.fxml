@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AfficherAvisController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="200.0" spacing="40.0" styleClass="white-background" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/333199419_200992245868457_2286414934692578680_n.png" />
+               </image>
+            </ImageView>
+            <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="44.0" prefWidth="6.0" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="288.0" styleClass="round-layout" stylesheets="@styles.css">
+               <children>
+                  <TextField prefHeight="31.0" prefWidth="232.0" promptText="search" styleClass="transparent" stylesheets="@styles.css" />
+                  <ImageView fitHeight="20.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/CHERCHER.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Pane prefHeight="67.0" prefWidth="507.0" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefHeight="67.0" prefWidth="189.0">
+               <children>
+                  <Label fx:id="labelNameUser" prefHeight="50.0" prefWidth="141.0" text="iheb chouchen">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="img_User" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#swProfileUser" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/334246895_1138793736798042_5697116455433317824_n.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="250.0" spacing="6.0" styleClass="white-background" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="284.0" prefWidth="250.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="141.0" text="Barre des tâches">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Home">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="mouse-moved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Excursion">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Abonnement">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Circuit">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="229.0" prefWidth="250.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="141.0" text="Divertissement">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Jeux">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Culture">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Questionnaire">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="293.0" prefWidth="250.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="141.0" text="Espace Admin">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Brows">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Brows">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Brows">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Pictures/324352899_1367577970682741_241313171972203892_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="112.0" text="Brows">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="825.0" fitWidth="1064.0">
+               <image>
+                  <Image url="@image/ELJEM.jpg" />
+               </image>
+            </ImageView>
+            <TableView fx:id="AvisTv" layoutX="44.0" layoutY="108.0" prefHeight="610.0" prefWidth="978.0">
+               <columns>
+                  <TableColumn fx:id="id_avisTv" prefWidth="102.0" text="id_avis" />
+                  <TableColumn fx:id="id_utilisateurTv" prefWidth="130.0" text="id_utilisateur" />
+                  <TableColumn fx:id="text_avisTv" prefWidth="115.0" text="text_avis" />
+                  <TableColumn fx:id="date_avisTv" prefWidth="156.0" text="date_avis" />
+                  <TableColumn fx:id="rate_avisTv" prefWidth="152.0" text="rate_avis" />
+                  <TableColumn fx:id="delete" minWidth="1.0" prefWidth="168.0" text="action" />
+                  <TableColumn fx:id="modifier" minWidth="1.0" prefWidth="154.0" text="action1" />
+               </columns>
+            </TableView>
+            <Label layoutX="401.0" layoutY="14.0" prefHeight="42.0" prefWidth="262.0" text="Affichage Des Avis" textFill="#eeeded">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="welcomeLb" layoutX="430.0" layoutY="67.0" prefHeight="17.0" prefWidth="233.0" text="welcome back" textFill="#ebe1e1">
+               <font>
+                  <Font name="System Italic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="exportExcelBtn" layoutX="940.0" layoutY="756.0" mnemonicParsing="false" onMouseClicked="#handleImageViewClick" text="export " />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
